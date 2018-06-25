@@ -34,3 +34,10 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# Github Pages things to ignore
+_site/
+
+# Cloud 9 things to ignore.
+.c9/
+
