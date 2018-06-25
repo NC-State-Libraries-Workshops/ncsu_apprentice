@@ -1,37 +1,50 @@
-## Welcome to GitHub Pages
+# Introduction To R
 
-You can use the [editor on GitHub](https://github.com/psu-data-workshops/introduction_to_r/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+An introductory lesson on R and R Studio. This repository is supports the
+Introduction To R workshop given by the Penn State Libraries.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Licensing
 
-### Markdown
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+Creative Commons Attribution 4.0 International License</a>.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+All content in this repository are licensed under the Creative Commons 4.0 - 
+Attribution License or where applicable, as with software code, an Apache 2.0
+Software License.
 
-```markdown
-Syntax highlighted code block
+### Usage
 
-# Header 1
-## Header 2
-### Header 3
+There are two primary branches to this project. You are free to read, and download
+all the content as long as you comply with the license. Switch to the following
+branches to access the content you want.
 
-- Bulleted
-- List
+#### Master
 
-1. Numbered
-2. List
+Contains running code for the examples given in the workshop.
 
-**Bold** and _Italic_ and `Code` text
+#### gh-pages
 
-[Link](url) and ![Image](src)
-```
+Contains the code for the workshop's web pages. To access the web pages go 
+to https://introduction-to-r-rob-0.c9users.io/pages/overview.html. The Overview
+page also provides a Table of Contents for the entire workshop.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Contributing
 
-### Jekyll Themes
+Contributions are welcome. You can contribute to this workshop by 
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/psu-data-workshops/introduction_to_r/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+1. Submitting issues
+2. Forking the repository, editing it and submitting your proposed changes as a pull request.
 
-### Support or Contact
+### Contributors
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Rob Olendorf
+LiZhao Ge
+
+
+
+
