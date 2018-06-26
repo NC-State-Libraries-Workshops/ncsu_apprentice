@@ -17,6 +17,10 @@ links:
     href: 'https://github.com/psu-data-workshops/start_here'
     text: Workshop List
     
+supporting_files:
+  - file: 'id1'
+    href: 'https://github.com/psu-data-workshops/introduction_to_r/blob/master/scripts/variables.R'
+    name: Examples script for this unit.
 
     
 ---

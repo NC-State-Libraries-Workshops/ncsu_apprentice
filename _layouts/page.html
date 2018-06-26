@@ -10,6 +10,15 @@ layout: default
 
   <div class="post-content">
     {{ content }}
+    
+    <h3> Supporting Files</h3>
+    <ul>
+      {% for file in page.supporting_files %}
+        <li>
+          <a href="{{ file.href }}">{{ file.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 
   {% if site.comments == true and page.comments != false %}
@@ -17,6 +26,9 @@ layout: default
       {% include custom_comments_provider.html %}
     </div>
   {% endif %}
+  
+
+  
   
   <hr/>
 
