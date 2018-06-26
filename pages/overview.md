@@ -2,6 +2,8 @@
 layout: page
 title: An Overview of R
 
+include_site_title: FALSE
+
 ---
 
 ### A Brief History of R
@@ -79,18 +81,34 @@ by
 * Implementing your own fixes and features to existing packages
 * Writing your own packages
 
+
+### What Is RStudio?
+
+RStudio is an Integerated Development Environment (IDE) for R. Essentially,
+what it does is wrap the functionality of R up into a unified window. It 
+also integrates some additional functionality such as integrating version 
+control systems such as Git or CVS. It also adds an file editor for creating 
+scripts and other text files, a interface into the package management system,
+and an interface into the objects in memory (this all will make more sense soon).
+
+Most of this functionality can be accomplished via external applications.
+For instance version control can be accomplished via the command line. Editing
+of scripts can be done with any text editor. RStudio just brings them all into
+one place. Some people like this a lot, some people prefer to use a pure
+command line R. Most people probably mix and match to suit their tastes.
+
 ___
 
-#### Navigation
-
 <div>
-    <li class="navigation">
-        <a href="https://github.com/psu-data-workshops/start_here">Workshops</a>
+    <li class="navigation left">
+        <a href="https://github.com/psu-data-workshops/start_here">Back to Workshops List</a>
     </li>
-    <li class="navigation">
-        <a href="pages/getting_started">Getting Started with R --></a>
+    <li class="navigation right">
+        <a href="getting_started">Getting Started with R --></a>
     </li>
 </div>
+
+<br/>
 
 ___
 

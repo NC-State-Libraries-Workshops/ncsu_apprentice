@@ -19,12 +19,19 @@ body {
     width: 450px;
 }
 
-.center {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 li.navigation{
     list-style-type: none;
+    display: inline-block;
+    &.right {
+        float: right;
+    }
+    &.center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &.left {
+        float: left;
+    }
 }
