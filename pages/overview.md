@@ -4,6 +4,14 @@ title: An Overview of R
 
 include_site_title: FALSE
 
+links:
+  next:
+    href: getting_started
+    text: Getting Started With R
+  root:
+    href: 'https://github.com/psu-data-workshops/start_here'
+    text: Workshop List
+
 ---
 
 ### A Brief History of R
@@ -97,22 +105,6 @@ of scripts can be done with any text editor. RStudio just brings them all into
 one place. Some people like this a lot, some people prefer to use a pure
 command line R. Most people probably mix and match to suit their tastes.
 
-___
-
-<div>
-    <li class="navigation left">
-        <a href="https://github.com/psu-data-workshops/start_here">Back to Workshops List</a>
-    </li>
-    <li class="navigation right">
-        <a href="getting_started">Getting Started with R --></a>
-    </li>
-</div>
-
-<br/>
-
-___
-
-
 
 
 ### References and Related Information
@@ -121,7 +113,7 @@ ___
 
 [The GNU Software Foundation](https://www.gnu.org/)
 
-Muenchen, R.A. (2012) The popularity of data science software. r4data.  <https://r4stats.com/articles/popularity/>
+Muenchen, R.A. (2012). The popularity of data science software. _r4data_.  <https://r4stats.com/articles/popularity/>
 
 
 

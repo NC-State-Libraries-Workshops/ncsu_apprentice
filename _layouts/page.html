@@ -17,5 +17,35 @@ layout: default
       {% include custom_comments_provider.html %}
     </div>
   {% endif %}
+  
+  <hr/>
+
+  <div>
+      <ul>
+          {% if page.links.back %}
+            <li class="navigation left">
+                <a href={{ page.links.back.href }}> <-- {{ page.links.back.text }}</a>
+            </li>  
+          {% endif %}
+          {% if page.links.next %}
+            <li class="navigation right">
+                <a href= {{ page.links.next.href }}> {{page.links.next.text }} --></a>
+            </li>
+          {% endif %}
+      </ul>
+  </div>
+  <div>
+      <ul>
+          {% if page.links.root %}
+            <li class="navigation center">
+                <a href={{ page.links.root.href  }}>{{ page.links.root.text }}</a>
+            </li>
+          {% endif %}
+      </ul>
+  </div>
+  
+  <br/>
+  
+  <hr/>
 
 </article>

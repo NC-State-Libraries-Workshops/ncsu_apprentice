@@ -3,6 +3,17 @@ layout: page
 title: Getting Started
 
 include_site_title: FALSE
+
+links:
+  back:
+    href: overview
+    text: Overview
+  next:
+    href: variables
+    text: R Basics - Variables
+  root:
+    href: 'https://github.com/psu-data-workshops/start_here'
+    text: Workshop List
 ---
 
 ### Installation
@@ -99,29 +110,6 @@ The broom will clean your history. Make sure you don't lose anything!
 * **_Git:_** This may not be on your installation, or may have a different name
 depending on if you have set up versioning and what versioning system you use. 
 
-___
-
-<div>
-    <ul>
-        <li class="navigation left">
-            <a href="overview"> <--Back to Overview</a>
-        </li>  
-        <li class="navigation right">
-            <a href="data_types">R Data Types --></a>
-    </li>
-    </ul>
-</div>
-<div>
-    <ul>  
-        <li class="navigation center">
-            <a href="https://github.com/psu-data-workshops/start_here">Workshop List</a>
-        </li>
-    </ul>
-</div>
-
-<br/>
-
-___
 
 
 
