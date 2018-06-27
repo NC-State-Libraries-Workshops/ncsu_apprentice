@@ -6,6 +6,11 @@ include_site_title: FALSE
 
 order: 3
     
+supporting_files:
+  - file: 'id1'
+    href: 'https://github.com/psu-data-workshops/introduction_to_r/blob/master/scripts/data_types.R'
+    name: Examples script for this unit.
+    
 ---
 
 R is a dynamically typed language. In some languages, like C++ or Java
