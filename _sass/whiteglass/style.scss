@@ -23,15 +23,21 @@ body {
 li.navigation{
     list-style-type: none;
     display: inline-block;
-    &.right {
-        float: right;
-    }
+    // &.right {
+    //     float: right;
+    // }
     &.center {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    &.left {
-        float: left;
-    }
+}
+
+.right {
+    float: right;
+}
+
+
+.left {
+    float: left;
 }

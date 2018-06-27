@@ -32,7 +32,7 @@ layout: default
         <li class="navigation left">
           {% assign prev_page_number = page.order | minus: 1 %}
           {% assign prev_page = sorted_pages[prev_page_number] %}
-          <a href={{ prev_page.url}}>{{ prev_page.title }}</a>
+          <a href={{ prev_page.url}}><--{{ prev_page.title }}</a>
         </li>
       {% endif %}
       {% assign last_page = sorted_pages.size | minus: 1 %}
@@ -55,7 +55,7 @@ layout: default
   
   <hr/>
   <div class="right">
-    <p>Page {{ page.order }} of {{  site.units.size }}</p>
+    <p>Page {{ page.order | plus: 1 }} of {{  site.units.size  }}</p>
   </div>
 
 </article>
