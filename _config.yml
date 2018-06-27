@@ -19,7 +19,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   A tutorial to get new users exposed to the essentials of R.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-directory: "" # the url to a directory of workshops
+
+directory_title: "Available Workshops"
+directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
 # twitter_username: jekyllrb
 github_username:  olendorf
 
@@ -32,6 +34,10 @@ theme: jekyll-whiteglass
 
 plugins:
   - jekyll-feed
+  
+collections:
+  units:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
