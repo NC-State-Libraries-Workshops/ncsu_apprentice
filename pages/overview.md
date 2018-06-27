@@ -4,13 +4,15 @@ title: An Overview of R
 
 include_site_title: FALSE
 
+order: 2
+
 links:
   next:
     href: getting_started
     text: Getting Started With R
   root:
-    href: 'https://github.com/psu-data-workshops/start_here'
-    text: Workshop List
+    href: '/'
+    text: Table of Contents
 
 ---
 

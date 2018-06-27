@@ -11,14 +11,16 @@ layout: default
   <div class="post-content">
     {{ content }}
     
-    <h3> Supporting Files</h3>
-    <ul>
-      {% for file in page.supporting_files %}
-        <li>
-          <a href="{{ file.href }}">{{ file.name }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% if page.supporting_files %}
+      <h3> Supporting Files</h3>
+      <ul>
+          {% for file in page.supporting_files %}
+            <li>
+              <a href="{{ file.href }}">{{ file.name }}</a>
+            </li>
+          {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 
   {% if site.comments == true and page.comments != false %}

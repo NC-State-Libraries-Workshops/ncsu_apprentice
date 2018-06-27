@@ -4,6 +4,8 @@ title: R Basics - Variables And Data Types
 
 include_site_title: FALSE
 
+order: 3
+
 links:
   back:
     href: getting_started

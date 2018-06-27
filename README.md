@@ -30,7 +30,7 @@ Contains running code for the examples given in the workshop.
 #### gh-pages
 
 Contains the code for the workshop's web pages. To access the web pages go 
-to https://introduction-to-r-rob-0.c9users.io/pages/overview.html. The Overview
+to https://introduction-to-r-rob-0.c9users.io. The Overview
 page also provides a Table of Contents for the entire workshop.
 
 ### Contributing

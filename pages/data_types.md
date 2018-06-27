@@ -4,6 +4,8 @@ title: R Basics - Data Types
 
 include_site_title: FALSE
 
+order: 4
+
 links:
   back:
     href: variables
@@ -219,6 +221,45 @@ Accessing parts of a matrix is very similar to a vector.
 ```
 
 #### Arrays
+
+Arrays work pretty much like matrixes, but they can be multidimensional. 
+
+```
+
+    > array_one <- array(c(1:60), dim=c(4,3,5))
+    > array_one
+    , , 1
+    
+         [,1] [,2] [,3]
+    [1,]    1    5    9
+    [2,]    2    6   10
+    [3,]    3    7   11
+    [4,]    4    8   12
+    
+    , , 2
+    
+         [,1] [,2] [,3]
+    [1,]   13   17   21
+    [2,]   14   18   22
+    [3,]   15   19   23
+    [4,]   16   20   24
+    
+    # Print out continues...
+    
+    # This is a three dimensional array 4x3x5 so we can access it as follows
+    > array_one[2,3,4]
+    [1] 46
+    
+    > array_one[2,,]
+         [,1] [,2] [,3] [,4] [,5]
+    [1,]    2   14   26   38   50
+    [2,]    6   18   30   42   54
+    [3,]   10   22   34   46   58
+    
+    
+    > array_one[2,,4]
+    [1] 38 42 46
+```
 
 #### Lists
 

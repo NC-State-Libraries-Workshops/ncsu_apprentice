@@ -4,6 +4,8 @@ title: Getting Started
 
 include_site_title: FALSE
 
+order: 1
+
 links:
   back:
     href: overview
@@ -12,8 +14,8 @@ links:
     href: variables
     text: R Basics - Variables
   root:
-    href: 'https://github.com/psu-data-workshops/start_here'
-    text: Workshop List
+    href: '/'
+    text: Table of Contents
 ---
 
 ### Installation
