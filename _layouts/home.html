@@ -14,9 +14,15 @@ layout: default
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
   
   <h3>Prerequisites</h3>
-
-  <p>This is an introductory workshop geared for those with no experience in R.
-  No statistical or programming experience is needed.</p>
+  <ul>
+  {% if site.data.prereqs and site.data.prereqs.size > 0 %}
+    {% for prereq in site.data.prereqs %}
+      <li>{{ prereq }}</li>
+    {% endfor %}
+  {% else %}
+    <li>None</li>
+  {% endif %}
+  </ul>
   
   <h3>Learning Objectives</h3>
 
@@ -35,11 +41,11 @@ layout: default
   
   {% assign sorted_pages = site.units | sort:"order" %}
   <ol>
-  {% for node in sorted_pages %}
-    {% if node.order %}
-      <li><a href="{{node.url}}">{{node.title}}</a></li>
-    {% endif %}
-  {% endfor %}
+    {% for node in sorted_pages %}
+      {% if node.order %}
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
+      {% endif %}
+    {% endfor %}
   </ol>
   
    <hr/>

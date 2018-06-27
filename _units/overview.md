@@ -4,7 +4,7 @@ title: An Overview of R
 
 include_site_title: FALSE
 
-order: 2
+order: 1
 
 links:
   next:

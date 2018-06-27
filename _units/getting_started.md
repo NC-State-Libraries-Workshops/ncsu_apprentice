@@ -4,18 +4,8 @@ title: Getting Started
 
 include_site_title: FALSE
 
-order: 1
+order: 0
 
-links:
-  back:
-    href: overview
-    text: Overview
-  next:
-    href: variables
-    text: R Basics - Variables
-  root:
-    href: '/'
-    text: Table of Contents
 ---
 
 ### Installation

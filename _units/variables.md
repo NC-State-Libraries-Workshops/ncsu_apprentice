@@ -1,23 +1,10 @@
 ---
 layout: page
-title: R Basics - Variables And Data Types
+title: R Basics - Variables
 
 include_site_title: FALSE
 
-order: 3
-
-links:
-  back:
-    href: getting_started
-    text: Getting Started
-    
-  next: 
-    href: data_types
-    text: R Basics - Data Types
-
-  root:
-    href: 'https://github.com/psu-data-workshops/start_here'
-    text: Workshop List
+order: 2
     
 supporting_files:
   - file: 'id1'
