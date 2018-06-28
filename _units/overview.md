@@ -37,7 +37,9 @@ dizzying array of packages for just about anything you would want. Also, because
 R is open source and comes with a large open source community, it is possible to 
 create other packages you need and could be useful to others ([Muenchen 2012](https://r4stats.com/articles/popularity/)).
 
+<div class="one_col center">
 <img src="/assets/img/r_package_growth.png" class="one_col center"/>
+</div>
 
 
 

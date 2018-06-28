@@ -12,12 +12,14 @@ body {
 }
 
 .two_col {
-    width: 350px;
+    width: 400px;
 }
+
 
 .one_col {
     width: 450px;
 }
+
 
 
 li.navigation{
@@ -27,7 +29,7 @@ li.navigation{
     //     float: right;
     // }
     &.center {
-      display: flex;
+      display: block;
       justify-content: center;
       align-items: center;
     }
@@ -40,4 +42,22 @@ li.navigation{
 
 .left {
     float: left;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+figure {
+    display: inline-block;
+    border: 1px gray;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
 }

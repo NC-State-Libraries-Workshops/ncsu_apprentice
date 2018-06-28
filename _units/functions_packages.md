@@ -6,13 +6,16 @@ include_site_title: FALSE
 
 order: 4
     
-    
+supporting_files:
+  - file: 'id1'
+    href: 'https://github.com/psu-data-workshops/introduction_to_r/blob/master/scripts/data_types.R'
+    name: Examples script for this unit.  
 ---
 
 ### Functions
 
-R is a functinal programming language, meaning everything you do is about 
-functions. So far we have been using functions in our examples without
+While R has some object oriented aspects, most of what you will do revolves 
+around functions. So far we have been using functions in our examples without
 really explaining what we are doing. Before we write a function, lets first
 look at how they are used.
 
