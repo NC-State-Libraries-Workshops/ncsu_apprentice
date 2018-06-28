@@ -23,7 +23,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 directory_title: "Available Workshops"
 directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
 
-supporting_files_path: "/tree/master/supporting_files"
+supporting_files_path: "/tree/master/supporting_files/"
 repository_url: "https://github.com/psu-data-workshops/introduction_to_r"
 # twitter_username: jekyllrb
 github_username:  olendorf
