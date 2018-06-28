@@ -31,7 +31,8 @@ github_username:  olendorf
 # Build settings
 markdown: kramdown
 # theme: minima
-theme: jekyll-whiteglass
+# theme: jekyll-whiteglass
+remote_theme: yous/whiteglass
 # theme: jekyll-athena
 # theme: jekyll-theme-dinky
 
