@@ -9,7 +9,7 @@ order: 5
 supporting_files:
   - file: 'id1'
     file_name: 'descriptive_analsis.R'
-    name: Examples script for this unit.  
+    link_text: Examples script for this unit.  
     
     
 ---
