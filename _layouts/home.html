@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <hr/>
+  </header>
+  
+  {{ content }}
+
+  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
+  
+  <h3>Prerequisites</h3>
+  <ul>
+  {% if site.data.prereqs and site.data.prereqs.size > 0 %}
+    {% for prereq in site.data.prereqs %}
+      <li>{{ prereq }}</li>
+    {% endfor %}
+  {% else %}
+    <li>None</li>
+  {% endif %}
+  </ul>
+  
+  <h3>Learning Objectives</h3>
+
+  <ul>
+    {% if site.data.objectives and site.data.objectives.size > 0 %}
+      {% for objective in site.data.objectives %}
+        <li>{{ objective }}</li>
+      {% endfor %}
+    {% else %}
+      <li>None Specified</li>
+    {% endif %}
+  </ul>
+
+
+  <h3>Units</h3>
+  
+  {% assign sorted_pages = site.units | sort:"order" %}
+  <ol>
+    {% for node in sorted_pages %}
+      {% if node.order %}
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+  
+   <hr/>
+  <div>
+      <ul>
+            <li class="navigation right">
+                <a href="{{ sorted_pages.first.url }}"> {{sorted_pages.first.title}} --></a>
+            </li>
+      </ul>
+  </div>
+  <div>
+      <ul>
+          {% if site.directory_title %}
+            <li class="navigation center">
+                <a href={{ site.directory_url}}>{{ site.directory_title }}</a>
+            </li>
+          {% endif %}
+      </ul>
+  </div>
+  
+  <br/>
+  
+  <hr/>
+
+  {% include pagination.html %}
+
+</div>

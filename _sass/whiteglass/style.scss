@@ -1,0 +1,43 @@
+.site-title {
+    font-weight: 800;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    color: #3B3B3B;
+}
+
+body {
+    color: #4e4e4e;
+}
+
+.two_col {
+    width: 350px;
+}
+
+.one_col {
+    width: 450px;
+}
+
+
+li.navigation{
+    list-style-type: none;
+    display: inline-block;
+    // &.right {
+    //     float: right;
+    // }
+    &.center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.right {
+    float: right;
+}
+
+
+.left {
+    float: left;
+}

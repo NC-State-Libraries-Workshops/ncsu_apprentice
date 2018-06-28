@@ -23,15 +23,11 @@ There are two primary branches to this project. You are free to read, and downlo
 all the content as long as you comply with the license. Switch to the following
 branches to access the content you want.
 
-#### Master
+### Materials
 
-Contains running code for the examples given in the workshop.
+A web based companion tutorial for the workshop can be found [here](https://introduction-to-r-rob-0.c9users.io/)
 
-#### gh-pages
-
-Contains the code for the workshop's web pages. To access the web pages go 
-to https://introduction-to-r-rob-0.c9users.io/pages/overview.html. The Overview
-page also provides a Table of Contents for the entire workshop.
+Working code for the tutorial and workshop are in the [sample_scripts]() directory in the repository.
 
 ### Contributing
 
