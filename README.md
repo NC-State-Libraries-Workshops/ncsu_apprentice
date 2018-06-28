@@ -27,7 +27,9 @@ branches to access the content you want.
 
 A web based companion tutorial for the workshop can be found [here](https://introduction-to-r-rob-0.c9users.io/)
 
-Working code for the tutorial and workshop are in the [sample_scripts]() directory in the repository.
+Working code for the tutorial and workshop are in the 
+[sample_scripts](https://github.com/psu-data-workshops/introduction_to_r/tree/master/sample_scripts) 
+directory in the repository.
 
 ### Contributing
 
