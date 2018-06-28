@@ -9,8 +9,8 @@ order: 6
 
 supporting_files:
   - file: 'id1'
-    href: 'https://github.com/psu-data-workshops/introduction_to_r/blob/master/scripts/descriptive_visualization.R'
-    name: Examples script for this unit.  
+    name: 'descriptive_visualization.R'
+    text: Examples script for this unit.  
     
 ---
 
