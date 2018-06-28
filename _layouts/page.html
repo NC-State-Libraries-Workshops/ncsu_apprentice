@@ -16,7 +16,7 @@ layout: default
       <ul>
           {% for file in page.supporting_files %}
             <li>
-              <a href="{{ file.href }}">{{ file.name }}</a>
+              <a href={{ site.repository_url }}{{ site.supporting_files_path }}{{ file.file_name }}>{{ file.link_text }}</a>
             </li>
           {% endfor %}
       </ul>
@@ -45,6 +45,7 @@ layout: default
       {% endif %}
     </ul>
   </div>
+  <br/>
   <div>
     <ul>
       <li class="navigation center">

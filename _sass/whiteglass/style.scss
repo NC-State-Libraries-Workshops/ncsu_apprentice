@@ -29,9 +29,10 @@ li.navigation{
     //     float: right;
     // }
     &.center {
-      display: block;
-      justify-content: center;
-      align-items: center;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 }
 
@@ -52,7 +53,6 @@ li.navigation{
 
 figure {
     display: inline-block;
-    border: 1px gray;
     margin: 20px; /* adjust as needed */
 }
 figure img {

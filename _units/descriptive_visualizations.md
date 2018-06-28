@@ -5,6 +5,12 @@ title: Descriptive Visualizations
 include_site_title: FALSE
 
 order: 6
+
+
+supporting_files:
+  - file: 'id1'
+    name: 'descriptive_visualization.R'
+    text: Examples script for this unit.  
     
 ---
 
@@ -68,7 +74,7 @@ create a graphical array of four historgrams.
     hist(iris_data$petal_length, main = "Petal Length", xlab = "Length (cm)")
     hist(iris_data$petal_width, main = "Petal Width", xlab = "Width (cm)")
 ```
-<div class="center">
+<div class="one_col center">
     <figure>
       <img src="/assets/img/descriptive_visualizations/figure3.png" alt="Improved multi-variable box plot"/>
       <figcaption>Figure 3. An array of four histograms, displaying the frequency of measurements from each variable.</figcaption>
