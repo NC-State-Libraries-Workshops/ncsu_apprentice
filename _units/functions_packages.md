@@ -9,7 +9,7 @@ order: 4
 supporting_files:
   - file: id1
     file_name: functions.R
-    link_text: Examples script for this unit.  
+    link_text: Example script for this unit.  
   - file: id2
     file_name: package_loader.R
     link_text: Package Loader Script

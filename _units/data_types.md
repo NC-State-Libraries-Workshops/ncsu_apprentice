@@ -8,8 +8,8 @@ order: 3
     
 supporting_files:
   - file: id1
-    file_name: 'data_types.R'
-    link_text: Examples script for this unit.
+    file_name: data_types.R
+    link_text: Example script for this unit.
     
 ---
 

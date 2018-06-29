@@ -10,7 +10,7 @@ order: 6
 supporting_files: 
   - file: id1
     file_name: 'descriptive_visualization.R'
-    link_text: Examples script for this unit.  
+    link_text: Example script for this unit.  
     
 ---
 
