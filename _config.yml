@@ -22,7 +22,7 @@ baseurl: "/introduction_to_r" # the subpath of your site, e.g. /blog
 url: "https://psu-data-workshops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
 
-directory_title: "Available Workshops"
+directory_title: "Workshop Directory"
 directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
 
 production_url : https://github.com/psu-data-workshops/introduction_to_r
