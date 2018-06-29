@@ -17,7 +17,7 @@ title: Introduction To R
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A tutorial to get new users exposed to the essentials of R.
-baseurl: introduction_to_r # the subpath of your site, e.g. /blog
+baseurl: /introduction_to_r # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 directory_title: "Available Workshops"
@@ -25,7 +25,7 @@ directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a
 
 production_url : https://github.com/psu-data-workshops/introduction_to_r
 
-BASE_PATH : intro_to_r_temp
+BASE_PATH : /introduction_to_r
 ASSET_PATH : /introduction_to_r/assets
 
 supporting_files_path: "/tree/master/supporting_files/"
