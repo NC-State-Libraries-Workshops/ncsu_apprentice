@@ -32,7 +32,7 @@ layout: default
         <li class="navigation left">
           {% assign prev_page_number = page.order | minus: 1 %}
           {% assign prev_page = sorted_pages[prev_page_number] %}
-          <a href={{ prev_page.url}}><--{{ prev_page.title }}</a>
+          <a href={{ prev_page.url | prepend:site.baseurl}}><--{{ prev_page.title }}</a>
         </li>
       {% endif %}
       {% assign last_page = sorted_pages.size | minus: 1 %}
@@ -40,7 +40,7 @@ layout: default
         <li class="navigation right">
           {% assign next_page_number = page.order | plus: 1 %}
           {% assign next_page = sorted_pages[next_page_number] %}
-            <a href={{ next_page.url }}> {{ next_page.title }} --></a>
+            <a href={{ next_page.url | prepend:site.baseurl }}> {{ next_page.title }} --></a>
         </li>
       {% endif %}
     </ul>
