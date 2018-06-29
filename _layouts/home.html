@@ -52,7 +52,7 @@ layout: default
   <div>
       <ul>
             <li class="navigation right">
-                <a href="{{ sorted_pages.first.url }}"> {{sorted_pages.first.title}} --></a>
+                <a href="{{ sorted_pages.first.url | prepend:site.baseurl }}"> {{sorted_pages.first.title}} --></a>
             </li>
       </ul>
   </div>
