@@ -17,16 +17,10 @@ title: Introduction To R
 author: olendorf
 github_username:  olendorf
 
-description: >- # this means to ignore newlines until "baseurl:"
-  A tutorial to get new users exposed to the essentials of R.
-<<<<<<< HEAD
+description: A tutorial to get new users exposed to the essentials of R.
 baseurl: "/introduction_to_r" # the subpath of your site, e.g. /blog
 url: "https://psu-data-workshops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
-=======
-baseurl: /introduction_to_r # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
->>>>>>> 3b9f9ab5cee35a3049e0006e3a9c950b55c854a1
 
 directory_title: "Available Workshops"
 directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
