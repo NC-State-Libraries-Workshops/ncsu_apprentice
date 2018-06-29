@@ -7,7 +7,7 @@ include_site_title: FALSE
 order: 5
 
 supporting_files:
-  - file: 'id1'
+  - file: id1
     file_name: 'descriptive_analsis.R'
     link_text: Examples script for this unit.  
     

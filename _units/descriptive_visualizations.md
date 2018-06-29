@@ -7,10 +7,10 @@ include_site_title: FALSE
 order: 6
 
 
-supporting_files:
-  - file: 'id1'
-    name: 'descriptive_visualization.R'
-    text: Examples script for this unit.  
+supporting_files: 
+  - file: id1
+    file_name: 'descriptive_visualization.R'
+    link_text: Examples script for this unit.  
     
 ---
 

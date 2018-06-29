@@ -80,7 +80,7 @@ GEM
       octokit (~> 4.0)
       public_suffix (~> 2.0)
       typhoeus (~> 1.3)
-    html-pipeline (2.8.0)
+    html-pipeline (2.8.2)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
@@ -101,7 +101,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-archives (2.1.1)
       jekyll (>= 2.4)
-    jekyll-athena (0.0.2)
     jekyll-avatar (0.5.0)
       jekyll (~> 3.0)
     jekyll-coffeescript (1.1.1)
@@ -255,11 +254,12 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
-  jekyll-athena
+  jekyll-archives
   jekyll-extract
-  jekyll-feed (~> 0.6)
+  jekyll-feed
+  jekyll-paginate
+  jekyll-sitemap
   jekyll-whiteglass
-  minima (~> 2.0)
   tzinfo-data
 
 BUNDLED WITH

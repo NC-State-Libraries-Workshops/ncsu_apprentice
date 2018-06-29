@@ -14,29 +14,65 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Introduction To R
-email: your-email@example.com
+author: olendorf
+github_username:  olendorf
+
 description: >- # this means to ignore newlines until "baseurl:"
   A tutorial to get new users exposed to the essentials of R.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/introduction_to_r" # the subpath of your site, e.g. /blog
+url: "https://psu-data-workshops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+lang: en
 
 directory_title: "Available Workshops"
 directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
 
-supporting_files_path: "/tree/master/supporting_files/"
-repository_url: "https://github.com/psu-data-workshops/introduction_to_r"
-# twitter_username: jekyllrb
-github_username:  olendorf
+ASSET_PATH : /introduction_to_r/assets
+
+# This allows us to put supporting files in a different repositry if desired.
+supporting_files_url: "https://github.com/psu-data-workshops/introduction_to_r"
+supporting_files_path: "/tree/master/supporting_files"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - .gitignore
 
 # Build settings
-markdown: kramdown
-# theme: minima
+markdown: kramdown# Markdown settings
+
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+
+# Outputting - used by whiteglass but not currently here
+permalink: /:year/:month/:day/:title/
+paginate_path: /posts/:num/
+paginate: 5
+
+# jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: /categories/:name/
+
+
 theme: jekyll-whiteglass
-# theme: jekyll-athena
-# theme: jekyll-theme-dinky
 
 plugins:
-  - jekyll-feed
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+  
+excerpt_separator: "<!-- more -->"
   
 collections:
   units:

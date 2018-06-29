@@ -16,7 +16,7 @@ layout: default
       <ul>
           {% for file in page.supporting_files %}
             <li>
-              <a href={{ site.repository_url }}{{ site.supporting_files_path }}{{ file.file_name }}>{{ file.link_text }}</a>
+              <a href={{ site.supporting_files_url }}{{ site.supporting_files_path }}/{{ file.file_name }}>{{ file.link_text }}</a>
             </li>
           {% endfor %}
       </ul>

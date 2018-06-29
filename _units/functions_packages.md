@@ -7,9 +7,9 @@ include_site_title: FALSE
 order: 4
     
 supporting_files:
-  - file: 'id1'
-    href: 'https://github.com/psu-data-workshops/introduction_to_r/blob/master/scripts/data_types.R'
-    name: Examples script for this unit.  
+  - file: id1 
+    file_name: functions.R
+    link_text: Examples script for this unit.
 ---
 
 ### Functions

@@ -8,8 +8,8 @@ order: 2
     
 supporting_files:
   - file: 'id1'
-    href: 'https://github.com/psu-data-workshops/introduction_to_r/blob/master/scripts/variables.R'
-    name: Examples script for this unit.
+    file_name: variables.R
+    link_text: Examples script for this unit.
 
     
 ---
