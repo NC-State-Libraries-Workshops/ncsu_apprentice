@@ -43,7 +43,7 @@ layout: default
   <ol>
     {% for node in sorted_pages %}
       {% if node.order %}
-        <li><a href="{{node.url}}">{{node.title}}</a></li>
+        <li><a href="{{node.url prepend:site.baseurl }}">{{node.title}}</a></li>
       {% endif %}
     {% endfor %}
   </ol>
