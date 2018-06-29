@@ -25,7 +25,8 @@ branches to access the content you want.
 
 ### Materials
 
-A web based companion tutorial for the workshop can be found [here](https://introduction-to-r-rob-0.c9users.io/)
+A web based companion tutorial for the workshop. It can also act as a stand 
+alone guide. 
 
 Working code for the tutorial and workshop are in the 
 [sample_scripts](https://github.com/psu-data-workshops/introduction_to_r/tree/master/sample_scripts) 
