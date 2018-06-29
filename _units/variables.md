@@ -10,8 +10,6 @@ supporting_files:
   - file: 'id1'
     file_name: variables.R
     link_text: Examples script for this unit.
-
-    
 ---
 
 

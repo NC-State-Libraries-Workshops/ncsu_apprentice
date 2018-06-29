@@ -5,11 +5,14 @@ title: R Basics - Functions and Packages
 include_site_title: FALSE
 
 order: 4
-    
+
 supporting_files:
-  - file: id1 
-    file_name: functions.R
-    link_text: Examples script for this unit.
+  - file: id1
+    path: functions.R
+    link_text: Examples script for this unit.  
+  - file: id2
+    path: package_loader.R
+    link_text: Package Loader Script
 ---
 
 ### Functions
