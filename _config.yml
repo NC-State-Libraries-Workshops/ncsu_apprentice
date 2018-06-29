@@ -25,6 +25,7 @@ directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a
 
 production_url : https://github.com/psu-data-workshops/introduction_to_r
 
+BASE_PATH : intro_to_r_temp
 ASSET_PATH : /introduction_to_r/assets
 
 supporting_files_path: "/tree/master/supporting_files/"
