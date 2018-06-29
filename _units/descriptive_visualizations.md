@@ -40,11 +40,11 @@ As always, start with `help()` when you are using a new function. As you can see
 ```
 <figure class="row">
     <figure class="column two_col">
-      <img src="/assets/img/descriptive_visualizations/figure1a.png" class="two_col" alt="Single variable box plot"/>
+      <img src="{{ site.baseurl }}/assets/img/descriptive_visualizations/figure1a.png" class="two_col" alt="Single variable box plot"/>
       <figcaption>Figure 1a. A simple box plot with one variable.</figcaption>
     </figure>
     <figure class="column two_col">
-      <img src="/assets/img/descriptive_visualizations/figure1b.png" class="two_col" alt="Multi-variable box plot"/>
+      <img src="{{ site.baseurl }}/assets/img/descriptive_visualizations/figure1b.png" class="two_col" alt="Multi-variable box plot"/>
       <figcaption>Figure 1b. A simple box plot with four variables.</figcaption>
     </figure>
 </figure>
@@ -55,7 +55,7 @@ add axis labels.
 
 <div class="one_col center">
     <figure>
-      <img src="/assets/img/descriptive_visualizations/figure2.png" alt="Improved multi-variable box plot"/>
+      <img src="{{ site.baseurl }}/assets/img/descriptive_visualizations/figure2.png" alt="Improved multi-variable box plot"/>
       <figcaption>Figure 2. Improved multi-variable box plot.</figcaption>
     </figure>
 </div>
@@ -76,7 +76,7 @@ create a graphical array of four historgrams.
 ```
 <div class="one_col center">
     <figure>
-      <img src="/assets/img/descriptive_visualizations/figure3.png" alt="Improved multi-variable box plot"/>
+      <img src="{{ site.baseurl }}/assets/img/descriptive_visualizations/figure3.png" alt="Improved multi-variable box plot"/>
       <figcaption>Figure 3. An array of four histograms, displaying the frequency of measurements from each variable.</figcaption>
     </figure>
 </div>
