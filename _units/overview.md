@@ -28,7 +28,7 @@ R has increased steadily in popularity and functionality. As of 2016 R
 has become one of the most commonly used software tools in the researc literature
 and is also a highly sought after skill among employers ([Muenchen 2012](https://r4stats.com/articles/popularity/)).
 
-<img src="/assets/img/r_publications.png" class="two_col"/><img src="/assets/img/r_jobs.png" class="two_col"/>
+<img src="{{ site.baseurl }}/assets/img/r_publications.png" class="two_col"/><img src="{{ site.baseurl }}/assets/img/r_jobs.png" class="two_col"/>
 
 
 Along with, and perhaps in part driving its popularity is the number of packages
@@ -38,7 +38,7 @@ R is open source and comes with a large open source community, it is possible to
 create other packages you need and could be useful to others ([Muenchen 2012](https://r4stats.com/articles/popularity/)).
 
 <div class="one_col center">
-<img src="/assets/img/r_package_growth.png" class="one_col center"/>
+<img src="{{ site.baseurl }}/assets/img/r_package_growth.png" class="one_col center"/>
 </div>
 
 

@@ -43,7 +43,7 @@ layout: default
   <ol>
     {% for node in sorted_pages %}
       {% if node.order %}
-        <li><a href="{{node.url}}">{{node.title}}</a></li>
+        <li><a href="{{node.url | prepend:site.baseurl }}">{{node.title}}</a></li>
       {% endif %}
     {% endfor %}
   </ol>
@@ -52,7 +52,7 @@ layout: default
   <div>
       <ul>
             <li class="navigation right">
-                <a href="{{ sorted_pages.first.url }}"> {{sorted_pages.first.title}} --></a>
+                <a href="{{ sorted_pages.first.url | prepend:site.baseurl }}"> {{sorted_pages.first.title}} --></a>
             </li>
       </ul>
   </div>

@@ -47,7 +47,7 @@ touch on the main parts briefly here. If you start up RStudio, you should
 see something like the screenshot below. Note: If you don't see a script 
 panel thats normal, you will soon.
 
-![Standard RStudio Panels](/assets/img/r_studio_panels.png "Standard RStudio Panels")
+![Standard RStudio Panels]({{ site.baseurl }}/assets/img/r_studio_panels.png "Standard RStudio Panels")
 
 
 #### Console / Command Line

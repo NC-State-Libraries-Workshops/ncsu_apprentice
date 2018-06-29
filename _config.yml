@@ -19,13 +19,21 @@ github_username:  olendorf
 
 description: >- # this means to ignore newlines until "baseurl:"
   A tutorial to get new users exposed to the essentials of R.
+<<<<<<< HEAD
 baseurl: "/introduction_to_r" # the subpath of your site, e.g. /blog
 url: "https://psu-data-workshops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: en
+=======
+baseurl: /introduction_to_r # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+>>>>>>> 3b9f9ab5cee35a3049e0006e3a9c950b55c854a1
 
 directory_title: "Available Workshops"
 directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
 
+production_url : https://github.com/psu-data-workshops/introduction_to_r
+
+BASE_PATH : /introduction_to_r
 ASSET_PATH : /introduction_to_r/assets
 
 # This allows us to put supporting files in a different repositry if desired.
