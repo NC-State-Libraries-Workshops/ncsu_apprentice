@@ -8,10 +8,10 @@ order: 4
 
 supporting_files:
   - file: id1
-    path: functions.R
+    file_name: functions.R
     link_text: Examples script for this unit.  
   - file: id2
-    path: package_loader.R
+    file_name: package_loader.R
     link_text: Package Loader Script
 ---
 

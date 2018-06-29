@@ -50,26 +50,12 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   toc_levels: 1..6
 
-# Outputting - used by whiteglass but not currently here
-permalink: /:year/:month/:day/:title/
-paginate_path: /posts/:num/
-paginate: 5
-
-# jekyll-archives
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: category_archives
-  permalinks:
-    category: /categories/:name/
 
 
 theme: jekyll-whiteglass
 
 plugins:
   - jekyll-archives
-  - jekyll-paginate
   - jekyll-sitemap
   
 excerpt_separator: "<!-- more -->"
