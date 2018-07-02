@@ -47,7 +47,14 @@ touch on the main parts briefly here. If you start up RStudio, you should
 see something like the screenshot below. Note: If you don't see a script 
 panel thats normal, you will soon.
 
-![Standard RStudio Panels]({{ site.baseurl }}/assets/img/r_studio_panels.png "Standard RStudio Panels")
+<div class="row fig-array">
+    <div class="col col-jumbo">
+        <figure>
+          <img src="/assets/img/getting_started/r_studio_panels.png" alt="Improved multi-variable box plot"/>
+          <figcaption>Figure 1. Typical layout for R Studio. Exact contents and location may vary.</figcaption>
+        </figure>
+    </div>
+</div>
 
 
 #### Console / Command Line
@@ -62,7 +69,7 @@ it respond with the correct answer.
 Click on the **_Terminal_** tab and type `$ ls` and return. You should see a 
 list of the files and diretories in your current R project (results may vary).
 
-#### Script Editor
+#### File Viewer And Editor
 
 If you don't already have an empty script, click on the **_New File_** icon on the top 
 left of your RStudio window and choose **R script**. This is an R script, there are

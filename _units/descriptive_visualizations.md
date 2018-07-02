@@ -38,26 +38,33 @@ As always, start with `help()` when you are using a new function. As you can see
     # Box plot for each variable, Figure 1b.
     boxplot(iris_data[,c(1;4)
 ```
-<figure class="row">
-    <figure class="column two_col">
-      <img src="/assets/img/descriptive_visualizations/figure1a.png" class="two_col" alt="Single variable box plot"/>
-      <figcaption>Figure 1a. A simple box plot with one variable.</figcaption>
-    </figure>
-    <figure class="column two_col">
-      <img src="/assets/img/descriptive_visualizations/figure1b.png" class="two_col" alt="Multi-variable box plot"/>
-      <figcaption>Figure 1b. A simple box plot with four variables.</figcaption>
-    </figure>
-</figure>
+
+<div class="row fig-array">
+    <div class="col col-md">
+        <figure>
+          <img src="/assets/img/descriptive_visualizations/figure1a.png" alt="Single variable box plot"/>
+          <figcaption>Figure 1a. A simple box plot with one variable.</figcaption>
+        </figure>
+    </div>
+    <div class="col col-md">
+        <figure>
+          <img src="/assets/img/descriptive_visualizations/figure1b.png" alt="Multi-variable box plot"/>
+          <figcaption>Figure 1b. A simple box plot with four variables.</figcaption>
+        </figure>
+    </div>
+</div>
 
 There a lot to improve with these box plots. Just using the four variable version,
 lets add a title, and tweak the boxes to add a little more information and 
 add axis labels.
 
-<div class="one_col center">
-    <figure>
-      <img src="/assets/img/descriptive_visualizations/figure2.png" alt="Improved multi-variable box plot"/>
-      <figcaption>Figure 2. Improved multi-variable box plot.</figcaption>
-    </figure>
+<div class="row fig-array">
+    <div class="col col-lg">
+        <figure>
+          <img src="/assets/img/descriptive_visualizations/figure2.png" alt="Improved multi-variable box plot"/>
+          <figcaption>Figure 2. Improved multi-variable box plot.</figcaption>
+        </figure>
+    </div>
 </div>
 
 
@@ -74,11 +81,13 @@ create a graphical array of four historgrams.
     hist(iris_data$petal_length, main = "Petal Length", xlab = "Length (cm)")
     hist(iris_data$petal_width, main = "Petal Width", xlab = "Width (cm)")
 ```
-<div class="one_col center">
-    <figure>
-      <img src="/assets/img/descriptive_visualizations/figure3.png" alt="Improved multi-variable box plot"/>
-      <figcaption>Figure 3. An array of four histograms, displaying the frequency of measurements from each variable.</figcaption>
-    </figure>
+<div class="row fig-array">
+    <div class="col col-lg">
+        <figure>
+          <img src="/assets/img/descriptive_visualizations/figure3.png" alt="Improved multi-variable box plot"/>
+          <figcaption>Figure 3. An array of four histograms, displaying the frequency of measurements from each variable.</figcaption>
+        </figure>
+    </div>
 </div>
 
 We are starting to get a sense of our data, and if you look at the histogram,

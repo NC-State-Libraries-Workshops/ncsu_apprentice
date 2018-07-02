@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Descriptive Visualizations
+title: Modifying Data
 
 include_site_title: FALSE
 
@@ -56,9 +56,26 @@ some of this before, here are a few ways to do this.
     > iris_outlier_2
        petal_length petal_width
     58          3.3           1
-
-
+    
+    # Random Sample from our data
+    
 ```
+
+### Transforming A Variable
+
+Sometimes it is necessary to apply a transformation to a variable. Here 
+we apply a log transformation. Notice how easy it is to define a new column too.
+
+```R
+    > iris_data$log_petal_width <- log(iris_data$petal_width + 1)
+    > head(iris_data)
+      sepal_length sepal_width petal_length petal_width species log_petal_width
+    1          5.1         3.5          1.4         0.2  setosa       0.1823216
+    2          4.9         3.0          1.4         0.2  setosa       0.1823216
+    3          4.7         3.2          1.3         0.2  setosa       0.1823216
+    4          4.6         3.1          1.5         0.2  setosa       0.1823216
+    5          5.0         3.6          1.4         0.2  setosa       0.1823216
+    6          5.4         3.9          1.7         0.4  setosa       0.3364722
 
     
 

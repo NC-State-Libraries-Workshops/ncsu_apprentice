@@ -25,20 +25,39 @@ open source project in 1997 and available in the
 [CRAN repository](https://cran.r-project.org/) with 12 packages.
 
 R has increased steadily in popularity and functionality. As of 2016 R 
-has become one of the most commonly used software tools in the researc literature
-and is also a highly sought after skill among employers ([Muenchen 2012](https://r4stats.com/articles/popularity/)).
+has become one of the most commonly used software tools in the research literature
+(Figure 1) and is also a highly sought after skill among employers (Figure 2, [Muenchen 2012](https://r4stats.com/articles/popularity/)).
 
-<img src="{{ site.baseurl }}/assets/img/r_publications.png" class="two_col"/><img src="{{ site.baseurl }}/assets/img/r_jobs.png" class="two_col"/>
+<div class="row fig-array">
+  <div class="col col-md">
+    <figure>
+      <img src="/assets/img/overview/r_publications.png" alt="Statistical tools in publications."/>
+      <figcaption>Figure 1. The frequency of data science software used in scholarly publications.</figcaption>
+    </figure>
+  </div>
+  <div class="col col-md">
+    <figure>
+      <img src="/assets/img/overview/r_jobs.png" alt="Statistical tools mentioned in data science job descriptions."/>
+      <figcaption>Figure 2. The frequency of data science tools mentioned in data science job descriptions.</figcaption>
+    </figure>
+  </div>
+</div>
+
 
 
 Along with, and perhaps in part driving its popularity is the number of packages
 available with for R. Along with what comes in the default installations, there is a
 dizzying array of packages for just about anything you would want. Also, because
 R is open source and comes with a large open source community, it is possible to 
-create other packages you need and could be useful to others ([Muenchen 2012](https://r4stats.com/articles/popularity/)).
+create other packages you need and could be useful to others ( Figure 3, [Muenchen 2012](https://r4stats.com/articles/popularity/)).
 
-<div class="one_col center">
-<img src="{{ site.baseurl }}/assets/img/r_package_growth.png" class="one_col center"/>
+<div class="row fig-array">
+  <div class="col col-lg">
+    <figure>
+      <img src="/assets/img/overview/r_package_growth.png" alt="Growth in number of R packaages available on CRAN."/>
+      <figcaption>Figure 3. The growth in R packages available in the CRAN repository over time..</figcaption>
+    </figure>
+  </div>
 </div>
 
 
