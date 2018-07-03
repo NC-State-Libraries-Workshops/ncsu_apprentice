@@ -31,13 +31,13 @@ has become one of the most commonly used software tools in the research literatu
 <div class="row fig-array">
   <div class="col col-md">
     <figure>
-      <img src="/assets/img/overview/r_publications.png" alt="Statistical tools in publications."/>
+      <img src="{{ site.baseurl }}/assets/img/overview/r_publications.png" alt="Statistical tools in publications."/>
       <figcaption>Figure 1. The frequency of data science software used in scholarly publications.</figcaption>
     </figure>
   </div>
   <div class="col col-md">
     <figure>
-      <img src="/assets/img/overview/r_jobs.png" alt="Statistical tools mentioned in data science job descriptions."/>
+      <img src="{{ site.baseurl }}/assets/img/overview/r_jobs.png" alt="Statistical tools mentioned in data science job descriptions."/>
       <figcaption>Figure 2. The frequency of data science tools mentioned in data science job descriptions.</figcaption>
     </figure>
   </div>
@@ -54,7 +54,7 @@ create other packages you need and could be useful to others ( Figure 3, [Muench
 <div class="row fig-array">
   <div class="col col-lg">
     <figure>
-      <img src="/assets/img/overview/r_package_growth.png" alt="Growth in number of R packaages available on CRAN."/>
+      <img src="{{ site.baseurl }}/assets/img/overview/r_package_growth.png" alt="Growth in number of R packaages available on CRAN."/>
       <figcaption>Figure 3. The growth in R packages available in the CRAN repository over time..</figcaption>
     </figure>
   </div>

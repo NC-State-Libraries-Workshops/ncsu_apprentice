@@ -78,6 +78,17 @@ we apply a log transformation. Notice how easy it is to define a new column too.
     6          5.4         3.9          1.7         0.4  setosa       0.3364722
 ```
 
+### Recoding A Variable
+
+Recoding a variable works the same way. We'll expand the complexity a little 
+bit at the same time. In this example lets call everthing with a petal shorter
+than the first quartile "small", everthing bigger than the last quartile "big"
+and everthing in the middle "medium".
+
+```R
+
+q_petal_length <- quartile
+
     
 
 
