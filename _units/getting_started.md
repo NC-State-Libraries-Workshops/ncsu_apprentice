@@ -50,7 +50,7 @@ panel thats normal, you will soon.
 <div class="row fig-array">
     <div class="col col-jumbo">
         <figure>
-          <img src="/assets/img/getting_started/r_studio_panels.png" alt="Improved multi-variable box plot"/>
+          <img src="{{ site.baseurl }}/assets/img/getting_started/r_studio_panels.png" alt="Improved multi-variable box plot"/>
           <figcaption>Figure 1. Typical layout for R Studio. Exact contents and location may vary.</figcaption>
         </figure>
     </div>
@@ -95,8 +95,7 @@ them all now, but briefly
 
 This is called **Memory** because it primarily deals with content that lives 
 in your computer's memory or RAM. Technically speaking it goes away when you closer
-RStudio or turn off your computer. However, RStudio seems to load some back into 
-memory when you reload your project (pretty handy!).
+RStudio or turn off your computer.
 
 * **_Environment:_** displays all the variables, functions and data currently
 active in your memory. If you type `a <- 42` into your console, you will 

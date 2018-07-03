@@ -1,22 +1,8 @@
-<header class="site-header">
-
-  <div class="wrapper">
-    
-    {% if page.include_site_title %}
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% endif %}
-
-    <nav class="site-nav">
-      {% for link in site.data.navigation.main %}
-        {% if link.url contains "http" %}
-          {% assign url = link.url %}
-        {% else %}
-          {% assign url = link.url | relative_url %}
-        {% endif %}
-        <a class="page-link" href="{{ url }}">{{ link.title }}</a>
-      {% endfor %}
-    </nav>
-
+<header class="post-header">
+  <div class="site-title">
+    <h1 class="site-title"> {{ site.title | escape }} </h1>
   </div>
-
+  <div class="unit-titel">
+    <h1 class="post-title">{{ page.title | escape }}</h1></div>
+  <hr/>
 </header>

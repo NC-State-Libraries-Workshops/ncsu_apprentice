@@ -76,6 +76,7 @@ we apply a log transformation. Notice how easy it is to define a new column too.
     4          4.6         3.1          1.5         0.2  setosa       0.1823216
     5          5.0         3.6          1.4         0.2  setosa       0.1823216
     6          5.4         3.9          1.7         0.4  setosa       0.3364722
+```
 
     
 
