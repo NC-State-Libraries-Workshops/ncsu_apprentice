@@ -42,24 +42,21 @@ layout: default
     {% endfor %}
   </ol>
   
-   <hr/>
-  <div>
-      <ul>
-            <li class="navigation right">
-                <a href="{{ sorted_pages.first.url | prepend:site.baseurl }}"> {{sorted_pages.first.title}} --></a>
-            </li>
-      </ul>
+  <hr/>
+
+  <div id="navigation">
+    <ul>
+      <li class="right">
+          <a href="{{ sorted_pages.first.url | prepend:site.baseurl }}"> {{sorted_pages.first.title}} --></a>
+      </li>
+    </ul>
+    <br/>
+    <ul>
+      <li class="center">
+        <a href={{ site.directory_url}}>{{ site.directory_title }}</a>
+      </li>
+    </ul>
   </div>
-  <div>
-      <ul>
-          {% if site.directory_title %}
-            <li class="navigation center">
-                <a href={{ site.directory_url}}>{{ site.directory_title }}</a>
-            </li>
-          {% endif %}
-      </ul>
-  </div>
-  
   <br/>
   
   <hr/>
