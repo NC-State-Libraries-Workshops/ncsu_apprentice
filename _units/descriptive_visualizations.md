@@ -2,8 +2,6 @@
 layout: page
 title: Descriptive Visualizations
 
-include_site_title: FALSE
-
 order: 6
 
 
@@ -36,7 +34,7 @@ As always, start with `help()` when you are using a new function. As you can see
     boxplot(iris_data$sepal_length)
     
     # Box plot for each variable, Figure 1b.
-    boxplot(iris_data[,c(1;4)
+    boxplot(iris_data[,c(1;4)])
 ```
 
 <div class="row fig-array">
@@ -57,6 +55,13 @@ As always, start with `help()` when you are using a new function. As you can see
 There a lot to improve with these box plots. Just using the four variable version,
 lets add a title, and tweak the boxes to add a little more information and 
 add axis labels.
+
+```R
+    boxplot(iris_data[, c(1:4)], 
+                main="Iris Flower Morphology Box Plots", 
+                notch = TRUE, ylab="Measurement (cm)", 
+                xlab="Floral Characteristic")
+```
 
 <div class="row fig-array">
     <div class="col col-lg">

@@ -2,8 +2,6 @@
 layout: page
 title: Getting Started
 
-include_site_title: FALSE
-
 order: 0
 
 ---

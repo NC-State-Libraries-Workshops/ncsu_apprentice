@@ -2,8 +2,6 @@
 layout: page
 title: Getting To Know Your Data
 
-include_site_title: FALSE
-
 order: 5
 
 supporting_files:

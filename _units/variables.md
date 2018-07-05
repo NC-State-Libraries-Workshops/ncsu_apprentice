@@ -2,8 +2,6 @@
 layout: page
 title: R Basics - Variables
 
-include_site_title: FALSE
-
 order: 2
     
 supporting_files:

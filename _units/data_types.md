@@ -2,8 +2,6 @@
 layout: page
 title: R Basics - Data Types
 
-include_site_title: FALSE
-
 order: 3
     
 supporting_files:

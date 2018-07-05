@@ -2,8 +2,6 @@
 layout: page
 title: An Overview of R
 
-include_site_title: FALSE
-
 order: 1
 
 links:

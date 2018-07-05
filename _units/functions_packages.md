@@ -2,8 +2,6 @@
 layout: page
 title: R Basics - Functions and Packages
 
-include_site_title: FALSE
-
 order: 4
 
 supporting_files:
