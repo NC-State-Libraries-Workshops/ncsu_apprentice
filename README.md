@@ -19,14 +19,11 @@ Software License.
 
 ### Usage
 
-There are two primary branches to this project. You are free to read, and download
-all the content as long as you comply with the license. Switch to the following
-branches to access the content you want.
+There are two primary branches to this project, master and gh-pages. They ideally they should both be current, but gh-pages is what is displayed. You are free to read, and download all the content as long as you comply with the license
 
 ### Materials
 
-A web based companion tutorial for the workshop. It can also act as a stand 
-alone guide. 
+A web based companion tutorial for a hands on workshop, but can act as a stand alone tutorial as well.
 
 Working code for the tutorial and workshop are in the 
 [sample_scripts](https://github.com/psu-data-workshops/introduction_to_r/tree/master/sample_scripts) 
