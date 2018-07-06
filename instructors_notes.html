@@ -1,0 +1,51 @@
+---
+layout: default
+title: Instructor's Notes
+---
+<div>
+  {{  site.data.instructors_notes.general_notes }}
+  
+  
+  <hr>
+  
+  <h3>Requirements and Set Up</h3>
+  
+  <dl>
+    {% if site.data.instructors_notes.requirements.size > 0 %}
+      {% for requirement in site.data.instructors_notes.requirements %}
+        <dt>{{requirement.title }}</dt>
+        <dd>{{ requirement.description }}</dd>
+        <br/>
+      {% endfor %}
+    {% else %}
+      <dt>No setup required</dt>
+    {% endif %}
+  </dl>
+  
+  <h3>Timeline</h3>
+  <dl>
+    {% if site.data.instructors_notes.timeline.size > 0 %}
+      {% assign cumulative_time = 0 %}
+      {% for segment in site.data.instructors_notes.timeline %}
+        <dt>{{ segment.title }}</dt>
+        <dd>( {{ cumulative_time }} - {{ cumulative_time | plus: segment.duration }} minutes)</dd>
+        <dd>{{ segment.description }}</dd>
+        <br/>
+        {% assign cumulative_time = cumulative_time | plus: segment.duration %}
+      {% endfor %}
+    {% else %}
+      <dt>No Timeline Supplied</dt>
+    {% endif %}
+  </dl>
+</div>
+
+<hr/>
+
+<div id="navigation">
+  <ul>
+      <li class="center">
+          <a href="{{ site.baseurl }}/">Home</a>
+      </li>
+  </ul>
+</div>
+<br/>

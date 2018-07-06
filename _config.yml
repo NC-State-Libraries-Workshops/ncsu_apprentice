@@ -13,26 +13,36 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: An Introduction To R
-author: olendorf
-github_username:  olendorf
 
+
+title: An Introduction To R               # Name of the workshop
+author: LiZhao Ge & Robert Olendorf       # Workshop Authors Name(s)
 description: A tutorial to get new users exposed to the essentials of R.
-baseurl: "/introduction_to_r" # the subpath of your site, e.g. /blog
-url: "https://psu-data-workshops.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
 lang: en
 
+# Beginner|Intermediate|Advanced, required 
+level: Beginner                           
+
+# the subpath of your site, e.g. /blog, for GitHub pages the name of the 
+# GitHub repository.
+baseurl: "/introduction_to_r"
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://psu-data-workshops.github.io"
+
+# Information about a directory of workshops.
 directory_title: "Workshop Directory"
-directory_url: "https://github.com/psu-data-workshops/start_here" # the url to a directory of workshops
+directory_url: "https://github.com/psu-data-workshops/start_here"
+
+
+# This allows us to put supporting files in a different repositry if desired.
+supporting_files_url: "https://github.com/psu-data-workshops/introduction_to_r"
+supporting_files_path: "/tree/master/supporting_files"
 
 production_url : https://github.com/psu-data-workshops/introduction_to_r
 
 BASE_PATH : /introduction_to_r
 ASSET_PATH : /introduction_to_r/assets
-
-# This allows us to put supporting files in a different repositry if desired.
-supporting_files_url: "https://github.com/psu-data-workshops/introduction_to_r"
-supporting_files_path: "/tree/master/supporting_files"
 
 exclude:
   - Gemfile
@@ -42,7 +52,7 @@ exclude:
   - .gitignore
 
 # Build settings
-markdown: kramdown# Markdown settings
+markdown: kramdown   # Markdown settings
 
 kramdown:
   auto_ids: false
@@ -54,27 +64,18 @@ kramdown:
 
 
 
-theme: jekyll-whiteglass
+# theme: jekyll-whiteglass
+
+google_analytics: 'UA-121910301-1'
 
 plugins:
   - jekyll-archives
   - jekyll-sitemap
+  
   
 excerpt_separator: "<!-- more -->"
   
 collections:
   units:
     output: true
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 

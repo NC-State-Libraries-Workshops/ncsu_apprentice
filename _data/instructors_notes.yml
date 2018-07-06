@@ -1,0 +1,79 @@
+# Add any useful thoughts, ideas notes etc here.
+general_notes:
+  This part is for free text notes. \n
+  
+  Tbh fashion axe readymade slow-carb affogato do. Organic XOXO edison bulb 
+  hashtag green juice craft beer listicle viral aliquip kitsch crucifix VHS 
+  celiac readymade chia. Laborum blue bottle echo park cloud bread, ut deserunt 
+  tumeric eu knausgaard aesthetic. Labore commodo retro, incididunt blue bottle 
+  brooklyn culpa street art in gochujang yr put a bird on it photo booth 
+  selvage bicycle rights. DIY bitters succulents, tousled lorem godard aute 
+  mollit. \n
+
+  Oh. You need a little dummy text for your mockup? How quaint.
+# Describe what needs to be setup or exist for the workshop here.
+requirements:
+  - title: One requirement
+    description: 
+      This might be software, equipment, things to be printed out... \n
+      
+      Lorem ipsum dolor amet put a bird on it laboris tote bag, pitchfork glossier 
+      quis fugiat knausgaard farm-to-table austin do af try-hard. Single-origin 
+      coffee fingerstache truffaut disrupt, farm-to-table letterpress venmo 
+      officia intelligentsia migas helvetica meggings hella waistcoat synth. 
+      Schlitz actually retro, pariatur minim fixie wolf. Echo park drinking 
+      vinegar gentrify small batch labore.
+    
+  - title: Another requirement
+    description: 
+      Actually vinyl cloud bread chambray vape +1 stumptown cornhole four 
+      dollar toast roof party velit austin banh mi. Direct trade retro quinoa 
+      offal cardigan, non hot chicken selfies magna pour-over ullamco forage 
+      laborum shaman banh mi. Raw denim adaptogen food truck ipsum tattooed 
+      venmo marfa street art pariatur XOXO franzen ad est stumptown af. Hexagon 
+      trust fund butcher offal cloud bread gochujang. Consequat vegan everyday 
+      carry austin authentic vape put a bird on it VHS. Raclette ut biodiesel 
+      bitters.
+
+# Describe the timeline of the workshop here.    
+timeline: 
+  - title: First thing to do
+    duration: 5
+    description:
+      The indentation allows you to write multiple lines. \n. You can add new
+      lines by using the \\n character, unescaped of course.
+      
+      The title should be brief. \n
+      
+      The duration is in minutes. \n
+      
+      Lorem ipsum dolor amet tote bag ethical marfa, man braid exercitation trust 
+      fund kombucha cloud bread scenester in aliquip gastropub green juice salvia. 
+      Salvia artisan kogi letterpress. Williamsburg shaman enim fingerstache 
+      gluten-free tempor cold-pressed mustache 90's. Hexagon occaecat ethical 
+      affogato, aesthetic est mlkshk vape. Affogato sriracha try-hard, chia c
+      ommodo salvia street art hammock. Cronut literally cray sustainable slow-carb 
+      locavore godard polaroid tumeric. Pariatur PBR&B art party chartreuse.
+  - title: Second thing to do
+    duration: 10
+    description:
+      Beard adaptogen officia enamel pin voluptate ipsum everyday carry. 
+      Dreamcatcher man braid ad pinterest nisi cray hot chicken. Vegan beard duis 
+      aute asymmetrical butcher. Selvage actually whatever, veniam blog flannel 
+      ethical literally quis non pug mumblecore pour-over roof party.
+  - title: Last thing to do
+    duration: 20
+    description: 
+      Whatever dolore semiotics irony. Tumeric exercitation craft beer pabst 
+      hella tote bag pinterest. Affogato swag etsy chartreuse, gochujang cliche 
+      raw denim plaid austin adaptogen in. Veniam iceland tumblr salvia franzen 
+      selvage. Velit franzen actually, biodiesel fam cred kogi sartorial. \n
+  
+      Mollit enim live-edge quinoa next level. Dolore before they sold out 
+      bespoke in salvia incididunt. Shaman heirloom pour-over shabby chic pickled 
+      duis, poke echo park authentic dolore. Flannel hot chicken tofu dolore 
+      treet art bushwick pok pok pour-over copper mug. Brooklyn green juice 
+      messenger bag nostrud, four loko gluten-free dolore synth pabst subway 
+      tile iPhone celiac farm-to-table kickstarter do.
+
+    

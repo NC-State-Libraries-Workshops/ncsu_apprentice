@@ -7,6 +7,19 @@ layout: default
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
   
+  <ul class="info">
+    <li>Level: <strong>{{ site.level }}</strong></li>
+    {% if site.data.instructors_notes.timeline.size > 0 %}
+      {% assign duration = 0 %}
+      {% for segment in site.data.instructors_notes.timeline %}
+        {% assign duration = duration | plus: segment.duration %}
+      {% endfor %}
+      <li>Duration: <strong>{{ duration }} minutes </strong></li>
+    {% else %}
+      <li>Duration: <strong>Unknown</strong></li>
+    {% endif %}
+  </ul>
+  
   <h3>Prerequisites</h3>
   <ul>
   {% if site.data.prereqs and site.data.prereqs.size > 0 %}
@@ -42,6 +55,15 @@ layout: default
     {% endfor %}
   </ol>
   
+  
+  
+  <h3>Additional Pages</h3>
+    <ul>
+      <li><a href="{{ site.baseurl }}/instructors_notes.html">Instructor's Notes</a></li>
+    </ul>
+  
+  <hr/>
+  
   <hr/>
 
   <div id="navigation">
@@ -58,8 +80,6 @@ layout: default
     </ul>
   </div>
   <br/>
-  
-  <hr/>
 
   {% include pagination.html %}
 
