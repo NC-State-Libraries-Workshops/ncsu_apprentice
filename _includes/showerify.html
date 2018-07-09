@@ -8,7 +8,8 @@
     {% capture subsubitems2 %}{{ subsubitems }}{% endcapture %}
     {% assign subsubitems2 = subsubitems2 | split: '>' %}
     {% assign lol = subsubitems2[0] | append:">" %}
-    {% capture supertitle %}{{ subsubitems | remove_first:lol }}{% endcapture %}
+    <!--{% capture supertitle %}{{ subsubitems | remove_first:lol }}{% endcapture %}-->
+    {% capture supertitle %}{{ site.title }}{% endcapture %}
 {% endfor %}
 
 {% assign flag = false %}

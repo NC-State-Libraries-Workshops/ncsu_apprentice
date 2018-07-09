@@ -16,7 +16,6 @@
 
 
 title: An Introduction To R               # Name of the workshop
-author: LiZhao Ge & Robert Olendorf       # Workshop Authors Name(s)
 
 description: 
 
@@ -26,10 +25,10 @@ default_lang: en
 default_body_class: list
 
 author:
-    name: Yours Truly
+    name: Li Zhao Ge & Robert Olendorf 
     # url:  http://example.com/
     company:
-        name: Famous Inc.
+        name: Penn State University
         # url:  http://example.com/
 
 progress: true

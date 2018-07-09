@@ -5,7 +5,7 @@ layout: bright
 
 ---
 
-# Presentation Title
+<h1>{{ title }}</h1>
 {:style="display:none"}
 
 <!-- generated subtitle -->
