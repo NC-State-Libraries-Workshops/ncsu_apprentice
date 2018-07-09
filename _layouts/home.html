@@ -7,6 +7,8 @@ layout: default
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
   
+  <hr/>
+  
   <ul class="info">
     <li>Level: <strong>{{ site.level }}</strong></li>
     {% if site.data.instructors_notes.timeline.size > 0 %}
@@ -60,6 +62,7 @@ layout: default
   <h3>Additional Pages</h3>
     <ul>
       <li><a href="{{ site.baseurl }}/instructors_notes.html">Instructor's Notes</a></li>
+      <li><a href="{{ site.baseurl }}/slides.html">Slides</a></li>
     </ul>
   
   <hr/>

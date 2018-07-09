@@ -17,7 +17,24 @@
 
 title: An Introduction To R               # Name of the workshop
 author: LiZhao Ge & Robert Olendorf       # Workshop Authors Name(s)
-description: A tutorial to get new users exposed to the essentials of R.
+
+description: 
+
+default_theme: bright
+default_width: 792
+default_lang: en
+default_body_class: list
+
+author:
+    name: Yours Truly
+    # url:  http://example.com/
+    company:
+        name: Famous Inc.
+        # url:  http://example.com/
+
+progress: true
+line_numbers: true
+
 
 lang: en
 

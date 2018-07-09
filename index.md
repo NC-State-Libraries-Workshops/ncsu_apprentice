@@ -4,21 +4,12 @@
 
 layout: home
 title: An Introduction to R
-
-include_site_title: FALSE
-
-links:
-  next:
-    href: pages/overview
-    text: Start
-  root:
-    href: 'https://github.com/psu-data-workshops/start_here'
-    text: Workshop List
 ---
 
 The R statistical language is an open source, free and increasingly popular
 tool for working with and collecting data, doing statistical analyses creating
 visualizations and even more.
+
 
 This workshop will introduce you to R and RStudio. Provide some of the basics
 to getting started with the R programming language and give examples of some
