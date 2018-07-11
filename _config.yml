@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# This config file is meant for settings that affect your whole workshop, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
@@ -15,51 +15,53 @@
 # in the templates via {{ site.myvariable }}.
 
 
-title: An Introduction To R               # Name of the workshop
+title: Apprentice Workshop Template              # Name of the workshop
 
-description: 
 
-default_theme: bright
-default_width: 792
-default_lang: en
-default_body_class: list
-
+# Author information 
 author:
     name: Li Zhao Ge & Robert Olendorf 
     # url:  http://example.com/
     company:
         name: Penn State University
         # url:  http://example.com/
+        
+# Any value is ok, Beginner|Intermediate|Advanced are recommended, required 
+level: Beginner   
+        
+lang: en    # inserted into metadata fields.
 
+# Settings for the slides
+default_theme: bright  # Currently supports bright, ribbon
+default_width: 792     # Width of the slides
+default_body_class: list  # used in slide creation
+
+# Turn off if you want a little blue bar on the bottom of yoru slides 
+# tracking progresss
 progress: true
+# Lines in code blocks.
 line_numbers: true
-
-
-lang: en
-
-# Beginner|Intermediate|Advanced, required 
-level: Beginner                           
+                        
 
 # the subpath of your site, e.g. /blog, for GitHub pages the name of the 
-# GitHub repository.
-baseurl: "/introduction_to_r"
+# GitHub repository. Can be blank if you are not using Github pages
+baseurl: "/repo_name"
 # the base hostname & protocol for your site, e.g. http://example.com
-url: "https://psu-data-workshops.github.io"
+# url: "https://psu-data-workshops.github.io"
 
-# Information about a directory of workshops.
-directory_title: "Workshop Directory"
-directory_url: "https://github.com/psu-data-workshops/start_here"
+# Information about a directory of workshops, link is shown on the home page footer.
+# Omit if you don't want this.
+# directory_title: "Workshop Directory"  # The words that appear on the footer
+# directory_url: "https://github.com/user_name/repo_name" # Any url is fine
 
 
 # This allows us to put supporting files in a different repositry if desired.
-supporting_files_url: "https://github.com/psu-data-workshops/introduction_to_r"
-supporting_files_path: "/tree/master/supporting_files"
+# For now just hardcode the base url too, as its complicated with github.
+# This also lets external files be references.
+supporting_files_url: "https://github.com/user_name/repo_name/"
+supporting_files_path: "blob/gh-pages/supporting_files/"
 
-production_url : https://github.com/psu-data-workshops/introduction_to_r
-
-BASE_PATH : /introduction_to_r
-ASSET_PATH : /introduction_to_r/assets
-
+# Add files here to prevent jekyll from trying to make pages from them.
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -70,6 +72,7 @@ exclude:
 # Build settings
 markdown: kramdown   # Markdown settings
 
+# These are pretty good defaults, change with care.
 kramdown:
   auto_ids: false
   enable_coderay: false
@@ -80,17 +83,18 @@ kramdown:
 
 
 
-# theme: jekyll-whiteglass
-
-google_analytics: 'UA-121910301-1'
+# google_analytics: 'UA-xxxxxxxxx-1'
 
 plugins:
   - jekyll-archives
   - jekyll-sitemap
   
-  
+
+# For breif views of things
 excerpt_separator: "<!-- more -->"
-  
+
+# For the units pages, defaults should be good, 
+# change at your own risk.
 collections:
   units:
     output: true

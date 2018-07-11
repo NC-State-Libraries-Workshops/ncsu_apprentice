@@ -13,7 +13,7 @@ layout: default
       <ul>
           {% for file in page.supporting_files %}
             <li>
-              <a href={{ site.supporting_files_url }}{{ site.supporting_files_path }}/{{ file.file_name }}>{{ file.link_text }}</a>
+              <a href= {{ site.supporting_files_url }}{{ site.supporting_files_path }}/{{ file.file_name }}>{{ file.link_text }}</a>
             </li>
           {% endfor %}
       </ul>
@@ -29,7 +29,7 @@ layout: default
         <li class="left">
           {% assign prev_page_number = page.order | minus: 1 %}
           {% assign prev_page = sorted_pages[prev_page_number] %}
-          <a href={{ prev_page.url | prepend:site.baseurl}}><--{{ prev_page.title }}</a>
+          <a href={{ prev_page.url | prepend:site.baseurl }}><--{{ prev_page.title }}</a>
         </li>
       {% endif %}
       {% assign last_page = sorted_pages.size | minus: 1 %}
