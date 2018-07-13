@@ -55,7 +55,7 @@ line_numbers: true
 
 # the subpath of your site, e.g. /blog, for GitHub pages the name of the 
 # GitHub repository. Can be blank if you are not using Github pages
-baseurl: "/olendorf"
+baseurl: "/apprentice"
 
 
 # Provide information and notes for instructors conerning the entire
