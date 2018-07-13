@@ -3,14 +3,14 @@ layout: default
 ---
 
 <div class="home">
-  {{ content }}
+  {{ page.description | default: site.description | markdownify }}
 
   {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
   
   <hr/>
   
   <ul class="info">
-    <li>Level: <strong>{{ site.level }}</strong></li>
+    <li>Level: <strong>{{ site.level | markdownify }}</strong></li>
     {% if site.data.instructors_notes.timeline.size > 0 %}
       {% assign duration = 0 %}
       {% for segment in site.data.instructors_notes.timeline %}
@@ -26,7 +26,7 @@ layout: default
   <ul>
   {% if site.data.prereqs and site.data.prereqs.size > 0 %}
     {% for prereq in site.data.prereqs %}
-      <li>{{ prereq }}</li>
+      <li>{{ prereq | markdownify }}</li>
     {% endfor %}
   {% else %}
     <li>None</li>
@@ -38,7 +38,7 @@ layout: default
   <ul>
     {% if site.data.objectives and site.data.objectives.size > 0 %}
       {% for objective in site.data.objectives %}
-        <li>{{ objective }}</li>
+        <li>{{ objective | markdownify }}</li>
       {% endfor %}
     {% else %}
       <li>None Specified</li>
@@ -48,7 +48,7 @@ layout: default
 
   <h3>Units</h3>
   
-  {% assign sorted_pages = site.units | sort:"order" %}
+  {% assign sorted_pages = site.units  | where: "tutorial", true | sort: "order" %}
   <ol>
     {% for node in sorted_pages %}
       {% if node.order %}
@@ -57,13 +57,24 @@ layout: default
     {% endfor %}
   </ol>
   
-  
-  
+  {% assign instructors_notes = site.units | where: "instructors_notes", true %}
+  {% assign slides = false %}
+  {% for page in site.pages %}
+    {% if page.path == site.slide_path %}
+      {% assign slides = true %}
+    {% endif %}
+  {% endfor %}
+  {% if instructors_notes.size > 0 or slides %}
   <h3>Additional Pages</h3>
     <ul>
-      <li><a href="{{ site.baseurl }}/instructors_notes.html">Instructor's Notes</a></li>
-      <li><a href="{{ site.baseurl }}/slides.html">Slides</a></li>
+      {% if instructors_notes.size > 0 %}
+        <li><a href="{{ site.baseurl }}/instructors_notes.html">Instructor's Notes</a></li>
+      {% endif %}
+      {% if slides %}
+        <li><a href="{{ site.baseurl }}/slides.html">Slides</a></li>
+      {% endif %}
     </ul>
+  {% endif %}
   
   <hr/>
 

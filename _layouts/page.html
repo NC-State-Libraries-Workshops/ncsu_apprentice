@@ -13,7 +13,12 @@ layout: default
       <ul>
           {% for file in page.supporting_files %}
             <li>
-              <a href= {{ site.supporting_files_url }}{{ site.supporting_files_path }}/{{ file.file_name }}>{{ file.link_text }}</a>
+              {% if file.link_text %}
+                {% assign link_text = file.link_text %}
+              {% else %}
+                {% assign link_text = file.file_name %}
+              {% endif %}
+              <a href= {{ site.supporting_files_url }}{{ site.supporting_files_path }}/{{ file.file_name }}>{{ link_text }}</a>
             </li>
           {% endfor %}
       </ul>
@@ -24,19 +29,24 @@ layout: default
 
   <div id="navigation">
     <ul>
-      {% assign sorted_pages = site.units | sort:"order" %}
-      {% if page.order > 0 %}
+      {% assign sorted_pages = site.units | where: "tutorial", true | sort:"order" %}
+      {% for sorted_page in sorted_pages %}
+        {% if sorted_page.title == page.title and sorted_page.order == page.order %}
+          {% assign page_index = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
+      {% if page_index > 0 %}
         <li class="left">
-          {% assign prev_page_number = page.order | minus: 1 %}
-          {% assign prev_page = sorted_pages[prev_page_number] %}
+          {% assign prev_page_index = page_index | minus: 1 %}
+          {% assign prev_page = sorted_pages[prev_page_index] %}
           <a href={{ prev_page.url | prepend:site.baseurl }}><--{{ prev_page.title }}</a>
         </li>
       {% endif %}
-      {% assign last_page = sorted_pages.size | minus: 1 %}
-      {% if page.order < last_page %}
+      {% assign last_page_index = sorted_pages.size | minus: 1 %}
+      {% if page_index < last_page_index %}
         <li class="right">
-          {% assign next_page_number = page.order | plus: 1 %}
-          {% assign next_page = sorted_pages[next_page_number] %}
+          {% assign next_page_index = page_index | plus: 1 %}
+          {% assign next_page = sorted_pages[next_page_index] %}
             <a href={{ next_page.url | prepend:site.baseurl }}> {{ next_page.title }} --></a>
         </li>
       {% endif %}
@@ -51,7 +61,7 @@ layout: default
   
   <hr/>
   <div class="right">
-    <p>Page {{ page.order | plus: 1 }} of {{  site.units.size  }}</p>
+    <p>Page {{ page_index | plus: 1 }} of {{  sorted_pages.size  }}</p>
   </div>
 
 </article>

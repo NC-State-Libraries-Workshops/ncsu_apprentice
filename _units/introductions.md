@@ -1,25 +1,28 @@
 ---
 layout: page   # This is required
-title: Overview   # This is required
+title: Introductions   # This is required
 
-order: 0    # Determines the order of units. Doesn't need to be consecutive though
+order: -1    # Determines the order of units. Doesn't need to be consecutive though
             # or even start with zero, the pages will be displayed in their sort
             # order.
 
-duration: 5 # A hint to how long it will take to cover this topic in mintues.
+duration: 15 # A hint to how long it will take to cover this topic in mintues.
 
-tutorial: true  # Set to true if you want this page displayed as a web page
+tutorial: false  # Set to true if you want this page displayed as a web page
 instructors_notes: true  # Set to true if you want this displayed in instructors notes
 
 # Provide a brief description of what the unit is about. You can use markdown
 # notation for this.
 description: |
-  Describe what Apprentice is, its basic organization and philosphy.
-  
-  Descriptions are displayed in a few places.
-  
+  This is pulled from the `page.description` field.
+
 instructors_note: |
-  This is pulled to the instructors note field in `page.instructors_note` field.
+  This is pulled from `page.instructors_note`, and combined with the 
+  `page.description` field.
+  
+  This is not shown in the tutorial pages because `page.tutorial: false`.
+  
+
   
 # These should resolve to files in the supporting_files directory
 # or if you specified a different one in _config.yml use that.

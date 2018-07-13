@@ -15,23 +15,33 @@
 # in the templates via {{ site.myvariable }}.
 
 
-title: Apprentice Workshop Template              # Name of the workshop
+title: Apprentice             # Name of the workshop
+
+description: |
+  This tutorial will help you get your own Apprentice workshop up and running.
+  This tutorial, uses Apprentice so you will be changing this as  you work.
+  
+  Edit the *description:* field in `_config.yml`. This is where you can describe 
+  your workshop in markdown, or HTML or both. Replace this text with your own. 
+  The text here should be indented 2 space, don't use tabs. This can
+  be overridden in the `index.md` front matter using the *description:* field.
+
 
 
 # Author information 
 author:
-    name: Li Zhao Ge & Robert Olendorf 
+    name: Robert Olendorf 
     # url:  http://example.com/
     company:
         name: Penn State University
         # url:  http://example.com/
         
 # Any value is ok, Beginner|Intermediate|Advanced are recommended, required 
-level: Beginner   
+level: Beginner
         
 lang: en    # inserted into metadata fields.
 
-# Settings for the slides
+# Settings for the slides.
 default_theme: bright  # Currently supports bright, ribbon
 default_width: 792     # Width of the slides
 default_body_class: list  # used in slide creation
@@ -46,20 +56,44 @@ line_numbers: true
 # the subpath of your site, e.g. /blog, for GitHub pages the name of the 
 # GitHub repository. Can be blank if you are not using Github pages
 baseurl: "/repo_name"
-# the base hostname & protocol for your site, e.g. http://example.com
-# url: "https://psu-data-workshops.github.io"
 
-# Information about a directory of workshops, link is shown on the home page footer.
-# Omit if you don't want this.
-# directory_title: "Workshop Directory"  # The words that appear on the footer
-# directory_url: "https://github.com/user_name/repo_name" # Any url is fine
 
+# Provide information and notes for instructors conerning the entire
+# workshop. Specific notes for a unit should go in that unit's front matter.
+instructors:
+  notes: |
+    Any guidance or notes about this workshop that might be helpful to
+    instructors should go here. 
+    
+    Things that might be included are special problems to look out for,
+    deviations from the the typical Apprentice structure, or other 
+    gotchas.
+    
+    You can use **markdown** here.
+  requirements:
+    - title: Brief Name of The requirements
+      description: |
+        If the workshop requires any special resources, such as software,
+        hardware or other supplies it should be noted here. Also any other things
+        such as room seating etc.
+        
+        You can use **markdown** here.
+      
+    - title: Another requirement
+      description: |
+        Add as many as you want.
+    - title: Last requirement
+      description: |
+        One final thing to do.
 
 # This allows us to put supporting files in a different repositry if desired.
 # For now just hardcode the base url too, as its complicated with github.
 # This also lets external files be references.
 supporting_files_url: "https://github.com/user_name/repo_name/"
 supporting_files_path: "blob/gh-pages/supporting_files/"
+
+# Change this if you want to use a different file for your slides.
+slide_path: slides.md
 
 # Add files here to prevent jekyll from trying to make pages from them.
 exclude:

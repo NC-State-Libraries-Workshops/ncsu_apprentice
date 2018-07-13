@@ -4,6 +4,20 @@ body {
     color: #4e4e4e;
 }
 
+dl {
+    dt {
+        font-weight: 800;
+        .duration {
+            font-weight: normal;
+        }
+    }
+    
+    dd {
+        margin-left: 30px;
+        margin-right: 100px;
+    }
+}
+
 
 h1, h2, h3 {
     font-weight: 800;

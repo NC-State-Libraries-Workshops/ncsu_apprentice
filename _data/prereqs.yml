@@ -1,6 +1,6 @@
-## Add prerequesites here 
-
-# If you uncomment the following lines the prereqs will be shown
-# on the front page. Start each prereq with a - 
-# - Passing familiarity with prerequisites
+# Add prerequesites here. Leaving them blank will result in None being
+# displayed
+- Update these in `_data/prereqs.yml`.
+- Familiarity with git and GitHub is helpful
+- Minimum level of comfort with the command line may help
 # - Ability to uncomment these lines
