@@ -92,3 +92,5 @@ files using the following keys.
 Because the information for is kept with the units, as you move around units
 or change the information for a unit, the instructors' notes are updated 
 automatically.
+
+If you prefer not to have instructors notes, just delete or rename the file.
