@@ -92,9 +92,6 @@ instructors:
 supporting_files_url: "https://github.com/user_name/repo_name/"
 supporting_files_path: "blob/gh-pages/supporting_files/"
 
-# Change this if you want to use a different file for your slides.
-slide_path: slides.md
-
 # Add files here to prevent jekyll from trying to make pages from them.
 exclude:
   - Gemfile
@@ -144,7 +141,7 @@ reveal_theme: solarized.css
 reveal_transition: default
 
 # Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: reveal/css/theme/ 
+reveal_theme_path: /reveal/css/theme/ 
 
 # Additional custom CSS paths
 extra_css: 
@@ -162,5 +159,5 @@ reveal_options:
 reveal_dependencies: 
 
 # Reveal.js subdirectory
-reveal_path: reveal/
+reveal_path: /reveal/
 

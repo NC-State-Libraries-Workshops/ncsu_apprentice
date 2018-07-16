@@ -58,19 +58,14 @@ layout: default
   </ol>
   
   {% assign instructors_notes = site.units | where: "instructors_notes", true %}
-  {% assign slides = false %}
-  {% for page in site.pages %}
-    {% if page.path == site.slide_path %}
-      {% assign slides = true %}
-    {% endif %}
-  {% endfor %}
+  {% assign slides = site.slides %}
   {% if instructors_notes.size > 0 or slides %}
   <h3>Additional Pages</h3>
     <ul>
       {% if instructors_notes.size > 0 %}
         <li><a href="{{ site.baseurl }}/instructors_notes.html">Instructor's Notes</a></li>
       {% endif %}
-      {% if slides %}
+      {% if slides.size > 0 %}
         <li><a href="{{ site.baseurl }}/slides.html">Slides</a></li>
       {% endif %}
     </ul>
