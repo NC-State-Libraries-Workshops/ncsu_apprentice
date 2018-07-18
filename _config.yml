@@ -132,19 +132,22 @@ collections:
   slides:
     output: true
     
-    
-    
+############    
+## Configure slides here.
 # The Reveal theme
+
+# Look in the reveal/css/theme/ directory for a list of available themes.
 reveal_theme: solarized.css
 
 # The Reveal transition
 reveal_transition: default
 
+# Probably no need ot change
 # Path to the used theme (defaults to the Reveal.js standard theme path)
 reveal_theme_path: /reveal/css/theme/ 
 
 # Additional custom CSS paths
-extra_css: 
+extra_css: /reveal/css/apprentice.css
 
 # Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
 highlight_style_sheet: 
@@ -160,4 +163,7 @@ reveal_dependencies:
 
 # Reveal.js subdirectory
 reveal_path: /reveal/
+
+font-awesome:
+  assets: true
 

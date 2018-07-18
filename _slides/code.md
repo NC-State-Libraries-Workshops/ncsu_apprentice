@@ -6,7 +6,7 @@ order: 4
 
 With syntax highlighting for your code:
 
-```python
+```
 import pprint
 
 class MyClass(object):
