@@ -3,14 +3,14 @@
 A lightweight framework for creating workshops using jekyll and markdown (mostly).
 The concept is a good workshop will consist of 
 
-- A strong hands on component
+- A strong hands on component, Apprentice is intended as a compnanion to that
 - Good online material to refer to both before and after the workshop
 - A brief presentation to orient attendees
-- Be organized 
+- Good organization
 
 The Apprentice framework is composed of 4 primary components.
 
-1. A home page 
+1. A home page with prequisites and objectives
 2. Online tutorial composed of _units_
 3. A slide deck for presentations
 4. Instructors notes
@@ -18,8 +18,22 @@ The Apprentice framework is composed of 4 primary components.
 
 ## Useage
 
+
+### Quick Start
+
+1. Fork the repository
+2. Edit `_config.yml` as described in the comments
+3. Edit `_data/objectives.yml` and `_data/prereqs.yml` to outline course
+   objectives and prequisites.
+4. Create, remove and edit files in `_units/` to create course units. `_units/overview.md`
+   is documented with guidance.
+5. Create, remove and edit files in `_slides/` to create presentation slides as needed.
+6. Got to your GitHub pages site, all should be working.
+
+### Tutorial
+
 This template is also its own Apprentice workshop. To get started just
-visit the tutorial page.
+visit the [tutorial page](https://olendorf.github.io/apprentice/).
 
 
 
