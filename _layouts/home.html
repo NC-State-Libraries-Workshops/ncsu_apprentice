@@ -11,12 +11,14 @@ layout: default
   
   <ul class="info">
     <li>Level: <strong>{{ site.level | markdownify }}</strong></li>
-    {% if site.data.instructors_notes.timeline.size > 0 %}
+    {% if site.units.size > 0 %}
       {% assign duration = 0 %}
-      {% for segment in site.data.instructors_notes.timeline %}
-        {% assign duration = duration | plus: segment.duration %}
+      {% for unit in site.units %}
+        {% assign duration = duration | plus: unit.duration %}
       {% endfor %}
-      <li>Duration: <strong>{{ duration }} minutes </strong></li>
+      {% assign hours = duration | divided_by: 60 %}
+      {% assign minutes = duration | modulo: 60 %}
+      <li>Duration: <strong>{{ hours }} hours {{ minutes }} minutes </strong></li>
     {% else %}
       <li>Duration: <strong>Unknown</strong></li>
     {% endif %}

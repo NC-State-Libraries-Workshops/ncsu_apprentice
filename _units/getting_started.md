@@ -3,7 +3,7 @@ layout: page
 title: Getting Started
 
 order: 1
-duration: 30
+duration: 20
 tutorial: true
 instructors_notes: true
 description: |
@@ -57,7 +57,9 @@ This is described next.
 
 ## Working Locally
 
-To work locally just clone this repository using git.
+To work locally just clone this repository using git. This might require a bit
+more learning if you aren't familiar with git, but in the long run is 
+probably more effecient.
 
 ```
     > git clone https://github.com/olendorf/apprentice.git

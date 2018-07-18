@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 # Found in _layouts/home.html
-layout: page
+layout: bibliography
 
 # Override the workshop title if you want it to be different
 # The :title value in your _config.yml will be used by default.
@@ -14,7 +14,7 @@ title: Bibliography
 #   The text here should be indented 2 space, don't use tabs.
 ---
 
-This is my bibliography.
+This is my bibliography. Still need to do the layout
 
 
 

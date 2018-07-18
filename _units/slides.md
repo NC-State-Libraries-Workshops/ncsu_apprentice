@@ -3,7 +3,7 @@ layout: page
 title: Presentation Slides
 
 order: 6
-duration: 30
+duration: 15
 tutorial: true
 instructors_notes: true
 

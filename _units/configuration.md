@@ -3,7 +3,7 @@ layout: page
 title: Configuration
 
 order: 2
-duration: 15
+duration: 10
 tutorial: true
 instructors_notes: true
 description: |

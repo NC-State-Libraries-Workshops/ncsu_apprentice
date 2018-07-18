@@ -3,7 +3,7 @@ layout: page
 title: Instructors' Notes
 
 order: 5
-duration: 20
+duration: 15
 tutorial: true
 instructors_notes: true
 
@@ -41,6 +41,8 @@ a successful hands-on workshop. They are listed in the front matter of
 `instructors_notes.md` using this structure.
 
 ```yml
+    # Each new setup item starts with a dash. Make sure the items under it
+    # are indented correctly or the yaml won't parse.
     setup:
       - title: Name of the task
         description: |
@@ -93,4 +95,7 @@ Because the information for is kept with the units, as you move around units
 or change the information for a unit, the instructors' notes are updated 
 automatically.
 
-If you prefer not to have instructors notes, just delete or rename the file.
+If you prefer not to have instructors notes included in your workshop, just
+delete or rename `instructors_notes.md` in the top level of your workshop
+directory.
+

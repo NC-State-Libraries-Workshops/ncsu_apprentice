@@ -3,7 +3,7 @@ layout: page
 title: Creating Units
 
 order: 4
-duration: 20
+duration: 30
 tutorial: true
 instructors_notes: true
 
