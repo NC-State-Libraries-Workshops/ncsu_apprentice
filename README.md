@@ -21,6 +21,8 @@ The Apprentice framework is composed of 4 primary components.
 
 ### Quick Start
 
+If you are familiar with Jekyll, you can probably get going using the steps below. There is also a more comprehensive [tutorial and demo](https://olendorf.github.io/apprentice/) if you like.
+
 1. Fork the repository
 2. Edit `_config.yml` as described in the comments
 3. Edit `_data/objectives.yml` and `_data/prereqs.yml` to outline course
@@ -29,12 +31,6 @@ The Apprentice framework is composed of 4 primary components.
    is documented with guidance.
 5. Create, remove and edit files in `_slides/` to create presentation slides as needed.
 6. Got to your GitHub pages site, all should be working.
-
-### Tutorial
-
-This template is also its own Apprentice workshop. To get started just
-visit the [tutorial page](https://olendorf.github.io/apprentice/).
-
 
 
 ## Licensing
