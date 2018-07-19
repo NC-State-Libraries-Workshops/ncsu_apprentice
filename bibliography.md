@@ -8,13 +8,14 @@ layout: bibliography
 # Override the workshop title if you want it to be different
 # The :title value in your _config.yml will be used by default.
 title: Bibliography
+
 # description: | 
 #   you can override your description here.
 #   your workshop in markdown, or HTML or both. Replace this text with your own. 
 #   The text here should be indented 2 space, don't use tabs.
 ---
 
-This is my bibliography. Still need to do the layout
+
 
 
 
