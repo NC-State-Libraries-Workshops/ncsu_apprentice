@@ -92,6 +92,9 @@ instructors:
 supporting_files_url: "https://github.com/user_name/repo_name/"
 supporting_files_path: "blob/gh-pages/supporting_files/"
 
+# Where the bibliography data is comment out or set to blank to disable.
+bibliography: "bibliography.yml"    
+
 # Add files here to prevent jekyll from trying to make pages from them.
 exclude:
   - Gemfile

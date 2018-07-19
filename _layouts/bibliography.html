@@ -2,4 +2,16 @@
 layout: default
 ---
 
-{{ content }}
+<div class="bibliography">
+  {% for citation in site.data.bibliography %}
+    <p>
+      
+      {% for author in citation.author %}
+        {{ author.family }}, {{ author.given | slice: 0 }}.
+        {% unless forloop.last %}
+        , 
+        {% endunless %}
+      {% endfor %}
+    </p>
+  {% endfor %}
+</div>

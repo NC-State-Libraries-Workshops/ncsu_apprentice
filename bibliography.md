@@ -20,5 +20,3 @@ title: Bibliography
 
 
 
-
-

@@ -1,0 +1,9 @@
+  <p>
+    
+    {% for author in include.author %}
+      {{ author.family }}, {{ author.given | slice: 0 }}.
+      {% unless forloop.last %}
+      , 
+      {% endunless %}
+    {% endfor %}
+  </p>

@@ -2,24 +2,63 @@
 # http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 # based on https://citationstyles.org/
 
-# - title: One-click science marketing
-#   volume: '11'
-#   URL: http://dx.doi.org/10.1038/nmat3283
-#   DOI: 10.1038/nmat3283
-#   issue: '4'
-#   container-title: Nature Materials
-#   publisher: Nature Publishing Group
-#   author:
-#   - family: Fenner
-#     given: Martin
-#     orcid: 0000-0003-1419-2405
-#   page: 261-263
-#   id: fenner2012a
-#   type: article-journal
-#   issued:
-#     date-parts:
-#       - 2012
-#       - 3
+# Journal articale
+- title: One-click science marketing
+  volume: '11'
+  URL: http://dx.doi.org/10.1038/nmat3283
+  DOI: 10.1038/nmat3283
+  issue: '4'
+  container-title: Nature Materials
+  publisher: Nature Publishing Group
+  author:
+  - family: Fenner
+    given: Martin
+    orcid: 0000-0003-1419-2405
+  page: 261-263
+  id: fenner2012a
+  type: article-journal
+  issued:
+    date-parts:
+      - 2012
+      - 3
 
+# Conference or in proceeding 
+- title: Introduction to intersection theory in algebraic geometry
+  author:
+    - family: Fulton
+      given: William
+    - family: Citizen
+      given: Random
+  container-title: Regional Conference Series in Mathematics
+  number: 54
+  year: 1983
+  type: paper-conference
+  
+# Preprint or Unpublished manuscript,
+- title: Chern numbers for singular varieties and elliptic homology
+  author:
+    - family: Totaro
+      given: Burt
+  year: 1997
+  type: manuscript
+  
 
-
+# Book, proceedings, manual periodical
+- title: The title of the work
+  author:
+    - family: Babington
+      given: Peter
+  publisher: Foo Bar Press
+  year: 1993
+  volume: 4
+  collection-title: Title of series
+  event-place: Publisher Location
+  edition: 3
+  issued:
+    date-parts:
+      - 2012
+      - 7
+  note: Optional note
+  doi: DOI number
+  isbn: 3257227892
+  type: book
