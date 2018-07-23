@@ -55,6 +55,17 @@ header {
     }
 }
 
+.bibliography {
+    .citation {
+        margin-left: 25px;
+        text-indent: -25px;
+    }
+    blockquote {
+        margin-left: 50px;
+        margin-right: 100px;
+    }
+}
+
 /* Figures especially multi imaage arrays */
 .row.fig-array {
     text-align: center;

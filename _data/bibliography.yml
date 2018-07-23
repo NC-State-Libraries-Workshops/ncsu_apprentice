@@ -2,11 +2,22 @@
 # http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 # based on https://citationstyles.org/
 
+# Mappings of fields taken from 
+# https://www.scss.tcd.ie/joeran.beel/blog/2012/08/08/docear4word-mapping-bibtex-fields-and-types-with-the-citation-style-language/
+#       publisher <- publisher | institution | organization | school
+#       event-place <- address | location (ie. publisher location)
+#       
+
+# Some liberties were taken, especially with names to make parsing a bit easier.
+# The order of the key-value pairs doesn't matter. YAML is pretty picky about
+# indentations though. It must always be 2 spaces. 
+
 # Journal articale
 - title: One-click science marketing
+  type: article-journal
   volume: '11'
-  URL: http://dx.doi.org/10.1038/nmat3283
-  DOI: 10.1038/nmat3283
+  url: http://dx.doi.org/10.1038/nmat3283
+  doi: 10.1038/nmat3283
   issue: '4'
   container-title: Nature Materials
   publisher: Nature Publishing Group
@@ -16,49 +27,143 @@
     orcid: 0000-0003-1419-2405
   page: 261-263
   id: fenner2012a
-  type: article-journal
   issued:
-    date-parts:
-      - 2012
-      - 3
+    year: 2012
+    month: 3
+  
 
-# Conference or in proceeding 
+# Book, manual
+- title: The title of the work
+  type: book
+  author:
+    - family: Babington
+      given: Peter
+    - family: of Leisure
+      given: Supreme Being
+  publisher: Foo Bar Press
+  event-place: Publisher Location, NY
+  edition: 3
+  issued:
+    year: 2012
+    month: 7
+  note: |
+    If you want to have longer notes, such as in an annotated bibliography.
+    You can format it like this. Even use Markdown.
+    
+    ```  
+      note: |
+      If you want to have longer notes, such as in an annotated bibliography.
+      You can format it like this. Even use Markdown.
+      
+      # This is some markdown
+    ```
+    
+    ## This is some markdown
+    
+    Every kind of record can have a note.
+  doi:  10.1038/nphys1170
+  isbn: 3257227892
+  
+# Booklet, pamphlet
+- title: The title of the work
+  type: pamphlet
+  author:
+    - family: Caxton
+      given: Peter 
+  publisher: Publisher of the pamphlet
+  publisher-place: The address of the publisher
+  issued:
+    year: 1993
+    month: June
+
+
+# Conference  proceeding 
 - title: Introduction to intersection theory in algebraic geometry
+  type: manuscript
   author:
     - family: Fulton
       given: William
     - family: Citizen
       given: Random
-  container-title: Regional Conference Series in Mathematics
+  publisher: Organization, sponsor or publisher
+  collection-title: Regional Conference Series in Mathematics
   number: 54
-  year: 1983
+  issued: 
+    year: 1983
   type: paper-conference
   
 # Preprint or Unpublished manuscript,
 - title: Chern numbers for singular varieties and elliptic homology
+  type: manuscript
   author:
     - family: Totaro
       given: Burt
-  year: 1997
-  type: manuscript
+  issued: 
+    year: 1997
   
-
-# Book, proceedings, manual periodical
-- title: The title of the work
+# Book chapter or series member, or in proceedings
+- title: The title of the book chapter or series part
+  type: chapter
   author:
-    - family: Babington
-      given: Peter
-  publisher: Foo Bar Press
-  year: 1993
+    - family: Brendan
+      given: Chandrakanta
+    - family: Veronika
+      given: Varlaam
+  publisher: Random Publishers House
+  issued: 
+    year: 2002
   volume: 4
-  collection-title: Title of series
-  event-place: Publisher Location
+  editor:
+    - family: Pants
+      given: Mister
+    - family: Terwilliger
+      given: Robert Underdunk
+  collection-title: Title of series      # Or title of book or series
+  event-place: Publisher Place RI
   edition: 3
-  issued:
-    date-parts:
-      - 2012
-      - 7
+  page: 2-112
   note: Optional note
-  doi: DOI number
-  isbn: 3257227892
-  type: book
+  isbn: 1257227852
+  
+# PhD or Masters Thesis
+- title:  The title of the work
+  type: thesis
+  author:
+    - family: Harwood
+      given: Peter
+  publisher: The school of the thesis
+  issued:
+    year: 1993
+    month: 7
+  published: true
+  degree: PhD  # M.S. MBA, etc
+  url: http://example.com
+  address: The address of the publisher
+  note: Masters and PhD theses are the same here. Degrees can be what ever.
+  
+# Anythign else, misc
+- title : The title of the work
+  type: misc
+  author: 
+    - family: Tindall
+      given: Maël Rashid
+    - family: Swango
+      given: Ishmael
+  issued:
+    year: 2015
+    month: 2
+  note: |
+    Miscelaneious handles anything else.
+
+# Technical Report, report
+- title: The title of the work
+  type: report
+  author:
+    - family: Oriol
+      given: Maryann
+  publisher: The institution that published
+  issued:
+    year: 2007
+    month: February
+  publisher-place: The address of the publisher
+
