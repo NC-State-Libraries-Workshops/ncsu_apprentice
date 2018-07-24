@@ -10,6 +10,10 @@ layout: default
           {% include citation/book.html citation=citation %}
         {% when 'chapter' %}
           {% include citation/book.html citation=citation %}
+        {% when 'article-journal' %}
+          {% include citation/article.html citation=citation %}
+        {% when 'pamphlet' %}
+          {% include citation/pamphlet.html citation=citation %}
         {% else %}
           {% include citation/default.html citation=citation %}
       {% endcase %}

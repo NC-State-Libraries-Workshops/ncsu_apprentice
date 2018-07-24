@@ -6,6 +6,8 @@
 # https://www.scss.tcd.ie/joeran.beel/blog/2012/08/08/docear4word-mapping-bibtex-fields-and-types-with-the-citation-style-language/
 #       publisher <- publisher | institution | organization | school
 #       event-place <- address | location (ie. publisher location)
+#
+# The defined types aren't complete. Additional contributions welcome.
 #       
 
 # Some liberties were taken, especially with names to make parsing a bit easier.
@@ -13,7 +15,7 @@
 # indentations though. It must always be 2 spaces. 
 
 # Journal articale
-- title: One-click science marketing
+- title: A journal article example
   type: article-journal
   volume: '11'
   url: http://dx.doi.org/10.1038/nmat3283
@@ -33,7 +35,7 @@
   
 
 # Book, manual
-- title: The title of the work
+- title: The title of a book example
   type: book
   author:
     - family: Babington
@@ -65,7 +67,7 @@
   isbn: 3257227892
   
 # Booklet, pamphlet
-- title: The title of the work
+- title: The title of a pamphlet/booklet example
   type: pamphlet
   author:
     - family: Caxton
@@ -78,7 +80,7 @@
 
 
 # Conference  proceeding 
-- title: Introduction to intersection theory in algebraic geometry
+- title: Introduction to a conference or proceeding example
   type: manuscript
   author:
     - family: Fulton

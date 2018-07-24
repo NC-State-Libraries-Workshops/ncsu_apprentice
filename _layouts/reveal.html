@@ -13,11 +13,11 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="{{ site.reveal_path }}css/reveal.css">
+		<link rel="stylesheet" href="{{ site.base.url }}{{ site.reveal_path }}css/reveal.css">
 		<link rel="stylesheet" href="{{ site.reveal_theme_path }}{{ site.reveal_theme }}" id="theme">
 {% if site.extra_css %}
     {% for css_file in site.extra_css %}
-        <link rel="stylesheet" href="{{ css_file }}">
+        <link rel="stylesheet" href="{{ site.base.url }}{{ css_file }}">
     {% endfor %}
 {% endif %}
 
@@ -27,7 +27,7 @@
         {% else %}
             {% capture highlight_style_sheet %}{{ site.reveal_path }}lib/css/zenburn.css {% endcapture %}
         {% endif %}
-        <link rel="stylesheet" href="{{ highlight_style_sheet }}">
+        <link rel="stylesheet" href="{{ site.base.url }}{{ highlight_style_sheet }}">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -51,8 +51,8 @@
 
 		</div>
 
-		<script src="{{ site.reveal_path }}lib/js/head.min.js"></script>
-		<script src="{{ site.reveal_path }}js/reveal.js"></script>
+		<script src="{{ site.base_url }}{{ site.reveal_path }}lib/js/head.min.js"></script>
+		<script src="{{ site.base_url }}{{ site.reveal_path }}js/reveal.js"></script>
 
 		<script>
 
