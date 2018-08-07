@@ -1,29 +1,18 @@
 {% include citation/author_list.html authors=citation.author %}
 ({{ include.citation.issued.year }}).
-{{ include.citation.title }}. 
+{{ include.citation.title }}
 <em>
   {% if include.citation.container-title %}
-    {{ include.citation.container-title }}
+    . {{ include.citation.container-title }}
     {% if include.citation.volume %}
-      , 
+      , {{ include.citation.volume }}
     {% endif %}
-  {% endif %}
-  {% if include.citation.volume %}
-    {{ include.citation.volume }}
   {% endif %}
   {% if include.citation.issue %}
     ({{ include.citation.issue }})
   {% endif %}
 </em>
 {% if include.citation.page %}
-  , {{ include.citation.page }}.
+  , {{ include.citation.page }}
 {% endif %}
-{% if include.citation.doi %}
-  {% if include.citation.url %}
-    <a href= {{include.citation.url}}>
-      doi: {{ include.citation.doi }}
-    </a>
-  {% else %}
-    doi: {{ include.citation.doi }}
-  {% endif %}
-{% endif %}
+{% include citation/link.html citation=citation %}

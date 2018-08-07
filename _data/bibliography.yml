@@ -42,6 +42,20 @@
       given: Peter
     - family: of Leisure
       given: Supreme Being
+    - family: Three
+      given: Author
+    - family: Four
+      given: Author
+    - family: Five
+      given: Author
+    - family: Six
+      given: Author
+    - family: Seven
+      given: Author
+    - family: Eight
+      given: Author
+    - family: Nine
+      given: Author
   publisher: Foo Bar Press
   event-place: Publisher Location, NY
   edition: 3
@@ -58,15 +72,41 @@
       You can format it like this. Even use Markdown.
       
       # This is some markdown
+      
+      Every kind of record can have a note.
     ```
     
     ## This is some markdown
     
     Every kind of record can have a note.
+    
+    The bibliographic style is APA. This record also has more than 7 authors.
   doi:  10.1038/nphys1170
   isbn: 3257227892
+
+# Book, manual
+- title: The title of a book example with editors
+  type: book
+  author:
+    - family: Hurst
+      given: Lily-May
+  editor:
+    - family: Campbell
+      given: Kiky
+    - family: Rosales
+      given: Katelyn
+  translator:
+    - family: Murray
+      given: Estell
+  publisher: Foo Bar Press
+  event-place: Publisher Location, NY
+  edition: 2
+  issued:
+    year: 2017
+    month: Sept
+  doi:  10.1038/xyz887
   
-# Booklet, pamphlet
+# Booklet, pamphlet 
 - title: The title of a pamphlet/booklet example
   type: pamphlet
   author:
@@ -77,7 +117,6 @@
   issued:
     year: 1993
     month: June
-
 
 # Conference  proceeding 
 - title: Introduction to a conference or proceeding example
@@ -92,7 +131,7 @@
   number: 54
   issued: 
     year: 1983
-  type: paper-conference
+  type: conference
   
 # Preprint or Unpublished manuscript,
 - title: Chern numbers for singular varieties and elliptic homology
@@ -102,6 +141,10 @@
       given: Burt
   issued: 
     year: 1997
+  status: Submitted for publication in Journal Of Irreproducible Results 
+  # Other examples, but can be anythign.
+  # status: Raw Data 
+  # status: Unpublished manuscript
   
 # Book chapter or series member, or in proceedings
 - title: The title of the book chapter or series part
@@ -134,6 +177,7 @@
     - family: Harwood
       given: Peter
   publisher: The school of the thesis
+  publisher-place: Location of institution
   issued:
     year: 1993
     month: 7
@@ -142,6 +186,21 @@
   url: http://example.com
   address: The address of the publisher
   note: Masters and PhD theses are the same here. Degrees can be what ever.
+
+# Technical Report, report
+- title: The title of the work
+  type: report
+  author:
+    - family: Oriol
+      given: Maryann
+  publisher: The institution that published the report
+  report_number: 1234-5
+  url: http://example.com
+  doi:  10.1038/xyz887
+  issued:
+    year: 2007
+    month: February
+  publisher-place: Thelocation of the publisher (City, ST)
   
 # Anythign else, misc
 - title : The title of the work
@@ -156,16 +215,4 @@
     month: 2
   note: |
     Miscelaneious handles anything else.
-
-# Technical Report, report
-- title: The title of the work
-  type: report
-  author:
-    - family: Oriol
-      given: Maryann
-  publisher: The institution that published
-  issued:
-    year: 2007
-    month: February
-  publisher-place: The address of the publisher
 

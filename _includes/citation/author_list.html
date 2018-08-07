@@ -10,10 +10,11 @@
     {% assign initials = initials | append: "." %}
   {% endfor %}
   {% assign author_list = author_list | append: initials %}
-  {% if forloop.index == 6 && author_list.size > 7 %}
-    {% assign author_list = autthor_list | &hellip; %} 
-    {% assign last_author = author_list.last %}
-    {% assign author_list = autoor_list | append: author.family %}
+  {% if forloop.index == 6 &&  include.authors.size > 7 %}
+    {% assign author_list = author_list | append: "&hellip;" %} 
+    {% assign last_author = include.authors.last %}
+    {% assign author_list = author_list | append: last_author.family %}
+    {% assign author_list = author_list | append: ", " %}
     {% assign givens = last_author.given | split: " " %}
     {% assign initials = "" %}
     {% for given in givens %}

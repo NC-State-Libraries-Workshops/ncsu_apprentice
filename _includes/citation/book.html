@@ -1,19 +1,21 @@
-{% include citation/author_list.html authors=citation.author %}
+{% include citation/author_list.html authors=include.citation.author %}
 ({{ include.citation.issued.year }}). 
 <em>{{ include.citation.title }}</em>. 
-{% if citation.collection-title %}
+{% if include.citation.translator %}
+  {% include citation/translators.html translators=include.citation.translator %}
+{% endif %}
+{% if include.citation.collection-title %}
   In 
-  {% if citation.editor %}
-    {% include citation/author_list.html authors=citation.editor %}
-    {% if citation.editor.size > 1 %}
-      (Eds.) 
-    {% else %}
-      (Ed)
-    {% endif %}
-    {{ citation.collection-title }}. 
+  {% if include.citation.editor %}
+    {% include citation/editors.html editors=include.citation.editor %}
+    {{ include.citation.collection-title }}. 
   {% endif %}
   {% if citation.page %}
     (pp. {{ citation.page }}). 
+  {% endif %}
+{% else %}
+  {% if include.citation.editor %}
+    {% include citation/editors.html editors=include.citation.editor %}
   {% endif %}
 {% endif %}
 {% if include.citation.event-place %}
@@ -22,3 +24,7 @@
 {% if include.citation.publisher %}
   {{ include.citation.publisher %}}
 {% endif %}
+{% if include.citation.status %}
+  {{ include.citation.status }}
+{% endif %}
+{% include citation/link.html citation=citation %}
