@@ -25,7 +25,8 @@ layout: default
 
   <hr/>
 
-  <div id="navigation">
+
+  <div id="navigation" class="tutorial-nav">
     <ul>
       {% assign sorted_pages = site.units | where: "tutorial", true | sort:"order" %}
       {% for sorted_page in sorted_pages %}
@@ -40,6 +41,9 @@ layout: default
           <a href={{ prev_page.url | prepend:site.baseurl }}><--{{ prev_page.title }}</a>
         </li>
       {% endif %}
+      <!--<li class="center">-->
+      <!--    <a href="{{ site.baseurl }}/">Home</a>-->
+      <!--</li>-->
       {% assign last_page_index = sorted_pages.size | minus: 1 %}
       {% if page_index < last_page_index %}
         <li class="right">
@@ -56,7 +60,6 @@ layout: default
       </li>
     </ul>
   </div>
-  
   <hr/>
   <div class="right">
     <p>Page {{ page_index | plus: 1 }} of {{  sorted_pages.size  }}</p>

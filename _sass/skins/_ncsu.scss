@@ -1,0 +1,69 @@
+/* NCSU variables */
+$theme-color: #990000;
+$text-color: #3F4650;
+$text-color-secondary: #545E6C;
+$text-grey: #333333;
+$divider: #333333;
+$lighter-grey: #666666;
+$darker-grey: #333333;
+$smoky-white: #ececec;
+
+
+.home {
+    margin: 25px 25px;
+    
+    hr {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}
+
+.post-header {
+    padding: 10px 0 0 0;
+}
+
+.post-content {
+    margin-left: 25px;
+}
+
+.site-title {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.unit-title {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.tutorial-nav {
+    margin-right: 25px;
+    li {
+        list-style-type: none;
+        display: inline-block;
+    }
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.site-footer {
+    text-align: center;
+    .author {
+        font-size: 125%;
+        font-weight: bold;
+    }
+    .organization {
+        font-weight: bold;
+    }
+}
