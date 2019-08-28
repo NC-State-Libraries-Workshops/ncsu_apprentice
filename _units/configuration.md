@@ -14,6 +14,29 @@ instructors_note: |
 
 ---
 
+This is some extra markdown.
+This is still the same line and paragraph.
+
+The only way to make a new paragraph is to make two line returns.
+
+*This is Italics*
+
+**Bold**
+
+__Alternative bold__
+
+_Italics_
+
+**_bold and italic _**
+
+<div>
+  <h1> HTML code</h1>
+</div>
+
+```ruby
+ ThisObject.function param
+```
+
 Jekyll websites always use a `_config.yml` file to keep site wide settings such 
 as **title** or **description**. The values set here are available from
 from within your markdown or html using ` {{ site.setting_name }}`. You
