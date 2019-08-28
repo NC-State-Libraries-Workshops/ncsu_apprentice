@@ -102,13 +102,20 @@ view your project in a web browser..
     # --baseurl ''  Overrides the baseurl set in your _config.yml (more on this later.)
     #               Briefly, if you deploy to github, you need the baseurl, deploying
     #               locally, or on other servers you probably don't.
-    > jekyll serve --host 0.0.0.0 --port 8080 --baseurl ''"
+    # --config '_config.yml,_config_dev.yml' This allows you to specify a development config
+    #               file that overrides the values in your standard _config.yml file. If you 
+    #               the example _config_dev.yml file overrides the supporting file path to work
+    #               with a server other than gh-pages and changes the title to make it obvious 
+    #               you are in a dev environment
+    > jekyll serve --host 0.0.0.0 --port 8080 --baseurl '' --config '_config.yml,_config_dev.yml"
     
     # ctrl-c to stop the server.
 ```
 
+
+
 Now you can start editing your files using your favorite text editor and the
-changes will appear in your website. (**NOTE: if you change `_config.yml` 
+changes will appear in your website. (**NOTE: if you change `_config.yml` or any config file,  
 you will need to restart your jekyll server).
 
 > **Pro Tip:**  
