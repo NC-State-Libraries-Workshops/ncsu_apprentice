@@ -35,9 +35,9 @@ level: Beginner
 lang: en    # inserted into metadata fields.
 
 # Settings for the slides.
-default_theme: bright  # Currently supports bright, ribbon
-default_width: 792     # Width of the slides
-default_body_class: list  # used in slide creation
+# default_theme: bright  # Currently supports bright, ribbon
+# default_width: 792     # Width of the slides
+# default_body_class: list  # used in slide creation
 
 
 theme_skin: ncsu # blue turquoise green berry orange ceramic ncsu

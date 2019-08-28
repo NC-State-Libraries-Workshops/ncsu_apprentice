@@ -11,7 +11,7 @@ source "https://rubygems.org"
 gem "jekyll"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "jekyll-whiteglass"
+# gem "jekyll-whiteglass"
 
 
 # Varoius themes and stuff for replicating GitHub pages
