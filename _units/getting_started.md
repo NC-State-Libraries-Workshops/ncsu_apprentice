@@ -59,7 +59,7 @@ This is described next.
 
 To work locally just clone this repository using git. This might require a bit
 more learning if you aren't familiar with git, but in the long run is 
-probably more effecient.
+more effecient.
 
 ```
     > git clone https://github.com/olendorf/apprentice.git
@@ -110,6 +110,12 @@ view your project in a web browser..
 Now you can start editing your files using your favorite text editor and the
 changes will appear in your website. (**NOTE: if you change `_config.yml` 
 you will need to restart your jekyll server).
+
+> **Pro Tip:**  
+> In Linux and Mac platforms you can make starting the server significantl easier by
+> creating an alias. Add the line `alias jstart="jekyll serve --host $IP --port $PORT --baseurl ''"` to
+> your **_.bashrc_** file. This assumes your have set your IP and Port as environmental variables. If not
+> just substitute the correct values into your alias.
 
 
 When you are ready to deploy to GitHub just make sure you are in the 

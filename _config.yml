@@ -33,7 +33,7 @@ author:
     name: Robert Olendorf 
     # url:  http://example.com/
     company:
-        name: Penn State University
+        name: NC State University
         # url:  http://example.com/
         
 # Any value is ok, Beginner|Intermediate|Advanced are recommended, required 
@@ -49,11 +49,7 @@ default_body_class: list  # used in slide creation
 
 theme_skin: ncsu # blue turquoise green berry orange ceramic ncsu
 
-# Turn off if you want a little blue bar on the bottom of yoru slides 
-# tracking progresss
-progress: true
-# Lines in code blocks.
-line_numbers: true
+
                         
 
 # the subpath of your site, e.g. /blog, for GitHub pages the name of the 
@@ -140,6 +136,12 @@ reveal_dependencies:
 
 # Reveal.js subdirectory
 reveal_path: /reveal/
+
+# Turn off if you want a little blue bar on the bottom of your slides 
+# tracking progresss
+progress: true
+# Lines in code blocks.
+line_numbers: true
 
 font-awesome:
   assets: true
