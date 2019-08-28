@@ -27,6 +27,9 @@ supporting_files:
     link_text: Example file for this unit.
   - file: 
     file_name: some_pic.png
+  - file:
+    file_name: variables.R
+    link_text: Sample R script
 ---
 
 ## What are Units?

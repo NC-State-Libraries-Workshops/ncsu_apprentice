@@ -16,7 +16,9 @@ layout: default
               {% else %}
                 {% assign link_text = file.file_name %}
               {% endif %}
-              <a href= {{ site.supporting_files_url }}{{ site.supporting_files_path }}/{{ file.file_name }}>{{ link_text }}</a>
+              <!-- https://github.com/olendorf/ncsu_apprentice/blob/gh-pages/supporting_files/some_file.txt -->
+              <!--<a href= {{ site.supporting_files_url }}{{ site.supporting_files_path }}{{ file.file_name }}>{{ link_text }}</a>-->
+              <a href=../{{ site.supporting_files_path }}{{ file.file_name }}>{{ link_text }}</a>
             </li>
           {% endfor %}
       </ul>
