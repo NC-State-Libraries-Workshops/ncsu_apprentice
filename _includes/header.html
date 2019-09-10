@@ -1,8 +1,11 @@
 <header class="post-header">
-  <div class="site-title">
-    <h1 class="site-title"> {{ site.title | escape }} </h1>
+  {% include ncsu_logo.html %}
+  <div class="site-header">
+    <div class="site-title">
+      <h1 class="site-title"> {{ site.title | escape }} </h1>
+    </div>
+    <div class="unit-title">
+      <h3 class="post-title">{{ page.title | escape }}</h1>
+    </div>
   </div>
-  <div class="unit-title">
-    <h1 class="post-title">{{ page.title | default: site.title | escape }}</h1></div>
-  <hr/>
 </header>

@@ -7,6 +7,30 @@
   {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
   {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
   <title>{{ title }}</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $("div").click(function() {
+            
+      // set the default content from data-defaultsource
+      // if your page is script-heavy, you may want to make this execute early
+      // in the $(document).ready() handler to avoid ugly delays.
+      $('div.tabcontrol.body').each(function() {
+          $(this).html($('#' + $(this).data('defaultsource')).html());
+      });
+  
+      // handle click on tabs
+      $('li.tabcontrol.tab').click(function() {
+          $('#' + $(this).data('target')).html( $('#' + $(this).data('source')).html());
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+      });
+      });
+    });
+  </script>
+  
   <meta name="description" content="{{ description }}">
   {% if page.keywords %}
     {% if page.keywords.first %}

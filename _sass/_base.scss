@@ -244,3 +244,53 @@ p {
     }
   }
 }
+
+ul.tabcontrol.tabs {
+    margin: 0;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #990000;
+}
+
+ul.tabcontrol.tabs li.tab {
+    float:left;
+    padding:3px 5px;
+    cursor: pointer;
+    list-style-type: none;
+    border: 1px solid LightGrey;
+    border-top: none;
+    box-sizing: border-box;
+    height: 30px;
+    margin-right: 2px;
+    // font-family: $sans_font !important;
+    font-size: 10pt !important;
+    // line-height: 100% !important;
+    border-radius: 0 0 2px 2px;
+    width: 100px;
+    text-align: center;
+    color: #990000;
+    background-color: #ececec;
+}
+
+ul.tabcontrol.tabs li.tabcontrol.tab.active {
+    height: 30px;
+    font-weight: bold !important;
+}
+
+ul.tabcontrol.tabs li.tabcontrol.tab:first-child {
+    border-left: 1px solid LightGrey;
+}
+
+div.tabcontrol.body {
+    padding: 0;
+}
+
+div.tabcontrol.body.fullborder {
+    border: 1px solid LightGrey;
+    border-top: none;
+    padding: 10px;
+}
+
+div.tabcontrol.body p:last-child, div.tabcontrol.body ul:last-child {
+    margin-bottom: 0;
+}
