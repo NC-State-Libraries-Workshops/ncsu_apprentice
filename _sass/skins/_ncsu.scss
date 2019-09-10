@@ -3,13 +3,17 @@ $theme-color: #cc0000;
 $text-color: #3F4650;
 $text-color-secondary: #545E6C;
 $text-grey: #333333;
+$text-light: #ececec;
 $divider: #333333;
 $lighter-grey: #666666;
 $darker-grey: #333333;
 $smoky-white: #ececec;
+$theme-color-dark: #990000;
 
 
-
+body {
+    font-size: 16px !important;
+}
 
 .home {
     margin: 25px 25px;
@@ -43,6 +47,10 @@ header.post-header {
     h1, h2, h3 {
         margin-top: 0;
         text-align: center;
+        a {
+            color: #ececec;
+            text-decoration: none;
+        }
     }
 }
 
@@ -73,6 +81,35 @@ header.post-header {
 .center {
     width: 100%;
     text-align: center;
+}
+
+.nav-bar {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: $theme-color;
+      height: 35px;
+    }
+    
+    li {
+        float: left;
+        &.active {
+            background: $theme-color-dark;
+        }
+    }
+    
+    a {
+        display: block;
+        color: $text-light;
+        text-decoration: none;
+        font-size: 1.75em;
+        margin: 0 15px;
+        &:hover {
+            color: $text-grey;
+            text-decoration: none;
+        }
+    }
 }
 
 .site-footer {
