@@ -191,11 +191,6 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    jekyll-whiteglass (1.9.1)
-      jekyll (>= 3.3)
-      jekyll-archives (~> 2.1)
-      jekyll-paginate (~> 1.1)
-      jekyll-sitemap (~> 1.0)
     jemoji (0.10.2)
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
@@ -258,7 +253,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-paginate
   jekyll-sitemap
-  jekyll-whiteglass
   tzinfo-data
 
 BUNDLED WITH
