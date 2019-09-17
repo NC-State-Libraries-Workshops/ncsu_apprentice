@@ -122,3 +122,25 @@ header.post-header {
         font-weight: bold;
     }
 }
+
+.tutorial-nav {
+    &.right a {
+        border-radius: 0 10px 10px 0;
+    }
+    
+    &.left a {
+        border-radius: 10px 0 0 10px;
+    }
+    a {
+        background: $theme-color;
+        text-decoration: none;
+        color: $text-light;
+        font-weight: bold;
+        padding: 3px 10px;
+        &:hover {
+            color: $text-grey;
+            text-decoration: none;
+        }
+    }
+    
+}

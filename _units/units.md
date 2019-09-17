@@ -22,13 +22,10 @@ instructors_note: |
 
     
 supporting_files:
-  - file:
-    file_name: some_file.txt
+  - file_name: some_file.txt
     link_text: Example file for this unit.
-  - file: 
-    file_name: some_pic.png
-  - file:
-    file_name: variables.R
+  - file_name: some_pic.png
+  - file_name: variables.R
     link_text: Sample R script
 ---
 
