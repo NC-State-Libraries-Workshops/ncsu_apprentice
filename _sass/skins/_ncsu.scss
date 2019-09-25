@@ -124,11 +124,11 @@ header.post-header {
 }
 
 .tutorial-nav {
-    &.right a {
+    .right a {
         border-radius: 0 10px 10px 0;
     }
     
-    &.left a {
+    .left a {
         border-radius: 10px 0 0 10px;
     }
     a {

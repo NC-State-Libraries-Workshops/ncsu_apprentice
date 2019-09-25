@@ -49,18 +49,21 @@ layout: default
       <li>None Specified</li>
     {% endif %}
   </ul>
-
-
-  <h3>Units</h3>
   
-  {% assign sorted_pages = site.units  | where: "tutorial", true | sort: "order" %}
-  <ol>
-    {% for node in sorted_pages %}
-      {% if node.order %}
-        <li><a href="{{node.url | prepend:site.baseurl }}">{{node.title}}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ol>
+  {% if site.units and site.units.size > 0 %}
+
+    <h3>Units</h3>
+    
+    {% assign sorted_pages = site.units  | where: "tutorial", true | sort: "order" %}
+    <ol>
+      {% for node in sorted_pages %}
+        {% if node.order %}
+          <li><a href="{{node.url | prepend:site.baseurl }}">{{node.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  
+  {% endif %}
   
   <br/>
   <br/>
