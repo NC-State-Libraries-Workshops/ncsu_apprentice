@@ -48,7 +48,17 @@ layout: default
     {% else %}
       <li>None Specified</li>
     {% endif %}
-  </ul>
+  </ul>  
+ 
+  {% if site.data.outcomes and site.data.outcomes.size > 0 %} 
+    <h3>Outcomes</h3>
+    <ul>
+      {% for outcome in site.data.outcomes %}
+        <li>{{ outcome | markdownify }}</li>
+      {% endfor %}
+    
+    </ul>
+  {% endif %}
   
   {% if site.units and site.units.size > 0 %}
 
