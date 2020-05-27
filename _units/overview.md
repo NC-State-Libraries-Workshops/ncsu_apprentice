@@ -2,7 +2,7 @@
 layout: page   # This is required
 title: Overview   # This is required
 
-order: 0    # Determines the order of units. Doesn't need to be consecutive though
+order: -10    # Determines the order of units. Doesn't need to be consecutive though
             # or even start with zero, the pages will be displayed in their sort
             # order.
 

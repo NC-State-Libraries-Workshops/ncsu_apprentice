@@ -39,6 +39,10 @@ p {
     line-height: 1.5;
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
     background:$smoky-white;
     max-width: 1000px;

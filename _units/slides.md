@@ -2,7 +2,7 @@
 layout: page
 title: Presentation Slides
 
-order: 6
+order: 60
 duration: 15
 tutorial: true
 instructors_notes: true
@@ -34,7 +34,7 @@ own file structued like below.
 ```markdown
 
     ---
-    order: 2
+    order: 20
     ---
     
     ## My Slide

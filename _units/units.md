@@ -2,7 +2,7 @@
 layout: page
 title: Creating Units
 
-order: 4
+order: 40
 duration: 30
 tutorial: true
 instructors_notes: true
@@ -10,7 +10,7 @@ instructors_notes: true
 description: |
   In apprentice, nits are the primary building block of a workshop. The units
   can be what you want, but typically they would be something like steps in a 
-  tutorial, descrete tasks in a workshop. We'll learn how to create, and 
+  tutorial or discrete tasks in a workshop. We'll learn how to create, and 
   configure workshops to fit your needs.
   
 instructors_note: |
@@ -33,9 +33,9 @@ supporting_files:
 
 Units are the primary building block of the Apprentice framework. The units
 can be what you want, but typically they would be something like steps in a 
-tutorial, descrete tasks in a workshop. In Apprentice you can have them 
-included in the online tutorial, the instructors notes, both or neither.
-A unit consists of two parts, the **front matter** and the **content**.
+tutorial or discrete tasks in a workshop. In Apprentice you can have them 
+included in the online tutorial, the instructors notes, both or neither (neither isn't 
+too useful). A unit consists of two parts, the **front matter** and the **content**.
 
 ## Understanding Front Matter
 
@@ -50,16 +50,16 @@ The example below is from this unit.
     layout: page                # Required. Specifies page.html in _layouts
     title: Creating A Workshop  # Title of the unit. 
     
-    order: 4                    # Order of the unit relative to others. Doesn't
+    order: 40                   # Order of the unit relative to others. Doesn't
                                 # need to be consecutive or start with zero
                                 # Units with -1, 0, 3, 7 will be sorted and
                                 # pages displayed as 1, 2, 3, 4.
                               
     
-    duration: 20                # How long the unit is expected to take. 
+    duration: 20                # How long the unit is expected to take in minutes. 
                           
     # If both of these are false, the unit is not used at all. 
-    # Pagination and ordering of units is relative to the grouping.
+    # Pagination and ordering of units is relative to the others.
     # So tutorial pages are ordered and paginated only with other 
     # tutorial pages. Same with instructor notes.
     tutorial: true              # If it is displayed on the online tutorial
@@ -107,6 +107,22 @@ the framework can do strange things). Edit the content a little, then
 start up your server it isn't running and visit the website. You should see
 the unit on the home page, and be able navigate directly to it via the table of
 contents, and use the page navigation as well.
+
+## Ordering and Naming of Units and Unit Files
+
+The order of your unit is determined by the `order: ` in the front matter.
+The name of the unit, as it appears on the webpage, is determined by the
+`title: `. You can use any order you like, and any file name you like. To make 
+things easier though there are some tricks and strategies you may find useful.
+
+Order  your units by increments of 10 to start. This way you can easily
+insert additional units between previous ones should you need to without
+having to renumber all the units.
+
+Naming the files the same as your title will help you find them. You can
+also start the file name with the order as well. For instance 
+`020_file_name.md`. Use at least 3 digits so they will always sort right 
+until you have over 100 units. 
 
 ## Supporting Files
 

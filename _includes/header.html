@@ -28,6 +28,9 @@
       {% if site.data.bibliography.size > 0 %}
         <li {% if page.url == "/bibliography.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/bibliography.html"> Bibliography</a></li>
       {% endif %}
+      {%  for tab in site.data.tabs %}
+        <li {% if page.url == "/{{ tab.path }}" %}class="active"{% endif %}><a href="{{ site.baseurl }}/{{ tab.path }}"> {{ tab.title }} </a></li>
+      {% endfor %}
     </ul>
   </div>
 </header>

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Layouts
+title: Pages and Page Layouts
 
-order: 7
+order: 70
 duration: 20
 tutorial: true
 instructors_notes: true
@@ -24,64 +24,47 @@ willing to learn, there are few limits as to what you can do.
 ## Adding Pages
 
 If you add a file to the top level directly, Jekyll will automatically 
-make it available to you. For instance if you wanted to add a bibliography,
-you can just create a `bibliography.md` file in the top level of your workshop
-project. For this tutorial, we have provided a file called `bibliography.md.back`
-for you to use, just change the name to `bibliography.md`. After a few moments go
-to `your_base_url/bibliography` in a web browser you should see the page.
+make it available to you. For instance if you wanted to add an **example**,
+you can just create a `example.md` file in the top level of your workshop
+project. For this tutorial, we have provided a file called `example.md.back`
+for you to use, just change the name to `example.md`. After a few moments go
+to `your_base_url/example` in a web browser you should see the page.
 
-To add a link, lets modify the `_layouts/home.html` file. This is the layout
-we use for `index.md`.  Alter the code to as shown.
+You can add this page to your navigation bar by adding some lines to `data/tabs.yml`
+as shown below.
+
+```yaml
+
+- path: example
+  title: Example
+```
+
+If you wish to add the link somewhere in your text just use the path where
+you would insert the URL in a link. For instance 
 
 {% raw %}
 ```html
-<h3>Additional Pages</h3>
-<ul>
-  <!-- find this code in _layouts/home.html` -->
-  {% if instructors_notes.size > 0 %}
-    <li><a href="{{ site.baseurl }}/instructors_notes.html">Instructor's Notes</a></li>
-  {% endif %}
-  {% if slides.size > 0 %}
-    <li><a href="{{ site.baseurl }}/slides.html">Slides</a></li>
-  {% endif %}
-  
-  <!-- Add this code here -->
-  <!-- need to see if the file exists -->
-  <!-- so we loop through and check each file -->
-  <!-- solution from https://stackoverflow.com/questions/16528783/check-for-existence-of-file-using-jekyll -->
-  {% for file in site.static_files %}
-    {% if file.path == "bibliography.md" %} 
-      <!-- here is where we add our link to the new page -->            
-      <li><a href="{{site.baseurl}}/bibliography">Bibliography</a></li>
-    {% endif %}
-  {% endfor %}
-  <!-- stop here -->
-</ul>
+
+# path is the path for your page. Don't use the word 'path'
+<a href={{ site.base_url }}/path></a>
+
 ```
 {% endraw %}
 
-The HTML probably looks at least a little familiar but what is with all the
-curly braces and percents? This is a language called *Liquid*, you can learn a 
-lot about it in the [Jekyll documentation](https://jekyllrb.com/docs/home/) 
-and the [Liquid documentation](https://help.shopify.com/en/themes/liquid). Liquid
-is a pretty simple language, and therfore somewhat limited, but that also makes
-it easier to use. 
-
-Very briefly, these characters tell Jekyll that what is inside is Liquid and 
-not HTML. The **_curly/precents_** {% raw %}`{% %}` 
-denote process steps in *Liquid*, if/then statement, assignments and loops for 
-instance. The **_curly/curlies_**, `{{ }}` {% endraw %} output the result for display. 
 
 ## Custom Layouts
 
-Layouts are essentially a mix of HTML and Liquid that handle
+Layouts are essentially a mix of HTML and 
+[Liquid](https://shopify.dev/docs/themes/liquid/reference) that handle
 repetitive aspects of your website, and also help give it a consistent look 
-and feel. Layouts,also can call other layouts. This page for instance has the 
-*page* layout specified in the front matter.
+and feel. Liquid is a simple programming language created by shopify, visit their pages
+for mor information. Layouts,also 
+can call other layouts. This page for instance has the *page* layout specified in the 
+front matter.
 
 ```yml
     ---
-    layout: page
+    layout: page  # Layout specified here
     title: Layouts and Themes
     
     order: 7
@@ -99,7 +82,7 @@ a layout as we did above. If we edit `_layouts/page.html` like below...
 
 ```html
     ---
-    layout: default
+    layout: default  # notice this layout calls another layout
     ---
     <article class="post">
     
@@ -112,6 +95,11 @@ a layout as we did above. If we edit `_layouts/page.html` like below...
 
 Everthing that uses the *page* layout will have this line on it. In a nutshell,
 that is how you can change the layouts to your needs.
+
+You can create your own layouts too. The easiest way to learn how to do that is to 
+user existing layouts and the 
+[shopify liquid documentation](https://shopify.dev/docs/themes/liquid/reference) to 
+create your own layout.
 
 
 

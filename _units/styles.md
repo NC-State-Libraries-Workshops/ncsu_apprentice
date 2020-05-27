@@ -2,7 +2,7 @@
 layout: page
 title: Styling
 
-order: 8
+order: 80
 duration: 15
 tutorial: true
 instructors_notes: true
@@ -30,7 +30,22 @@ For example you can add the code below
     }
 ```
 
-This will change the faint grey site title to feint grey. A full course in 
+You also need to tell Apprentice where to find your new css file. In `_sass/default.scss`
+add the following line at the bottom.
+
+```css
+
+@import "mixins";
+@import "base";
+@import "responsive";
+@import "print";
+@import "monokai";
+
+// add this line
+@import "custom";
+```
+
+This will change the faint grey site title to light pink. A full course in 
 CSS is beyond our scope but here is what is happening.
 
 If you look in the HTML source for this page (or use built in tools to inspect 

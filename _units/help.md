@@ -2,7 +2,7 @@
 layout: page
 title: Review and Getting Help
 
-order: 99
+order: 90
 duration: 15
 tutorial: true
 instructors_notes: true

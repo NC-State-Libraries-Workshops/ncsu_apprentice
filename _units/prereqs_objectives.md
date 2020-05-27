@@ -2,7 +2,7 @@
 layout: page
 title: Prerequisites and Objectives
 
-order: 3
+order: 30
 duration: 15
 tutorial: true
 instructors_notes: true
@@ -15,10 +15,10 @@ description: |
 ---
 
 Providing your learners and instructors with an idea of what skills they need 
-before they take the workshop and what they will learn is important to 
-helping everyone get the most out of the workshop. Apprentice pulls these
-from data files in the `_data/prereqs.yml` and `_data/objectives` directories.
-Just add a line for each prerequisite or objective in the appropriate file.
+before they take the workshop and what they will learn during the workshop is 
+important to helping everyone get the most out of their time. Apprentice 
+pulls these from data files in the `_data/prereqs.yml` and `_data/objectives` 
+directories.Just add a line for each prerequisite or objective in the appropriate file.
 
 ```yml
   # In _data/prereqs.yml

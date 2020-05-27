@@ -2,7 +2,7 @@
 layout: page
 title: Instructors' Notes
 
-order: 5
+order: 50
 duration: 15
 tutorial: true
 instructors_notes: true

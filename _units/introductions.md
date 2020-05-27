@@ -2,7 +2,7 @@
 layout: page   # This is required
 title: Introductions   # This is required
 
-order: -1    # Determines the order of units. Doesn't need to be consecutive though
+order: -20    # Determines the order of units. Doesn't need to be consecutive though
             # or even start with zero, the pages will be displayed in their sort
             # order.
 
